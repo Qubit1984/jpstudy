@@ -1,9 +1,10 @@
 // please update required information
 const siteMetadata = {
-  title: "Next.js Blog With Tailwind CSS and Contentlayer",
+  title: "Japanese Grammar from 0 to N1",
   author: "Japanese0toN1",
   headerTitle: "Next.js Blog",
-  description: "A blog created with Next.js, Tailwind.css and contentlayer.",
+  description:
+    "Japanese grammar learning websites prepared for English native speakers.",
   language: "en-us",
   theme: "system", // system, dark or light
   siteUrl: "https://create-blog-with-nextjs.vercel.app", // your website URL
