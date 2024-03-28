@@ -2,21 +2,21 @@ import BlogDetails from "@/src/components/Blog/BlogDetails";
 import RenderMdx from "@/src/components/Blog/RenderMdx";
 import Tag from "@/src/components/Elements/Tag";
 import siteMetadata from "@/src/utils/siteMetaData";
-import { allJlptN3s } from "contentlayer/generated";
+import { allJlptN4s } from "contentlayer/generated";
 import { slug } from "github-slugger";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
-  return allJlptN3s.map((blog) => {
+  return allJlptN4s.map((blog) => {
     const [, slugParts] = blog._raw.flattenedPath.split("/");
     return { slug: slugParts };
   });
 }
 
 export async function generateMetadata({ params }) {
-  const blog = allJlptN3s.find(
+  const blog = allJlptN4s.find(
     (blog) => blog._raw.flattenedPath.split("/")[1] === params.slug
   );
   if (!blog) {
@@ -64,7 +64,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default function BlogPage({ params }) {
-  const blog = allJlptN3s.find(
+  const blog = allJlptN4s.find(
     (blog) => blog._raw.flattenedPath.split("/")[1] === params.slug
   );
 
@@ -173,14 +173,14 @@ export default function BlogPage({ params }) {
           <RenderMdx blog={blog} />
           <div className="flex col-span-12 h-18  mt-20 justify-around ">
             <Link
-              href={`/jlptN3/${preSlug}`}
+              href={`/jlptN4/${preSlug}`}
               className="tflex items-center px-6 py-3 w-48  bg-blue-500 text-white rounded-md text-center hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
               &larr; Previous Page
             </Link>
 
             <Link
-              href={`/jlptN3/${nextSlug}`}
+              href={`/jlptN4/${nextSlug}`}
               className="tflex items-center px-6 py-3 w-48  bg-blue-500 text-center text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
               Next Page &rarr;

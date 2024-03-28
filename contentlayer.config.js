@@ -150,6 +150,78 @@ const JlptN3 = defineDocumentType(() => ({
     },
   },
 }));
+const JlptN4 = defineDocumentType(() => ({
+  name: "JlptN4",
+  filePathPattern: "jlptN4/**/*.mdx",
+  contentType: "mdx",
+  fields: {
+    id: {
+      type: "number",
+      required: true,
+    },
+    title: {
+      type: "string",
+      required: true,
+    },
+    publishedAt: {
+      type: "date",
+      required: true,
+    },
+    updatedAt: {
+      type: "date",
+      required: true,
+    },
+    description: {
+      type: "string",
+      required: true,
+    },
+    image: { type: "image" },
+    isPublished: {
+      type: "boolean",
+      default: true,
+    },
+    author: {
+      type: "string",
+      required: true,
+    },
+    tags: {
+      type: "list",
+      of: { type: "string" },
+    },
+  },
+  computedFields: {
+    url: {
+      type: "string",
+      resolve: (doc) => `/${doc._raw.flattenedPath}`,
+    },
+    readingTime: {
+      type: "json",
+      resolve: (doc) => readingTime(doc.body.raw),
+    },
+    toc: {
+      type: "json",
+      resolve: async (doc) => {
+        const regulrExp = /\n(?<flag>#{1,6})\s+(?<content>.+)/g;
+        const slugger = new GithubSlugger();
+        const headings = Array.from(doc.body.raw.matchAll(regulrExp)).map(
+          ({ groups }) => {
+            const flag = groups?.flag;
+            const content = groups?.content;
+
+            return {
+              level:
+                flag?.length == 1 ? "one" : flag?.length == 2 ? "two" : "three",
+              text: content,
+              slug: content ? slugger.slug(content) : undefined,
+            };
+          }
+        );
+
+        return headings;
+      },
+    },
+  },
+}));
 const JlptN5 = defineDocumentType(() => ({
   name: "JlptN5",
   filePathPattern: "jlptN5/**/*.mdx",
@@ -230,7 +302,7 @@ const codeOptions = {
 export default makeSource({
   /* options */
   contentDirPath: "content",
-  documentTypes: [Main, JlptN3, JlptN5],
+  documentTypes: [Main, JlptN3, JlptN4, JlptN5],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [

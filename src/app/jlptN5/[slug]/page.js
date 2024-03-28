@@ -5,6 +5,7 @@ import siteMetadata from "@/src/utils/siteMetaData";
 import { allJlptN5s } from "contentlayer/generated";
 import { slug } from "github-slugger";
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
@@ -70,6 +71,9 @@ export default function BlogPage({ params }) {
   if (!blog) {
     notFound();
   }
+
+  const preSlug = (parseInt(params.slug, 10) - 1).toString();
+  const nextSlug = (parseInt(params.slug, 10) + 1).toString();
 
   let imageList = [siteMetadata.socialBanner];
   if (blog.image) {
@@ -167,6 +171,21 @@ export default function BlogPage({ params }) {
             </details>
           </div>
           <RenderMdx blog={blog} />
+          <div className="flex col-span-12 h-18  mt-20 justify-around ">
+            <Link
+              href={`/jlptN5/${preSlug}`}
+              className="tflex items-center px-6 py-3 w-48  bg-blue-500 text-white rounded-md text-center hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            >
+              &larr; Previous Page
+            </Link>
+
+            <Link
+              href={`/jlptN5/${nextSlug}`}
+              className="tflex items-center px-6 py-3 w-48  bg-blue-500 text-center text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            >
+              Next Page &rarr;
+            </Link>
+          </div>
         </div>
       </article>
     </>

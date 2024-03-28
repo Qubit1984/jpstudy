@@ -87,9 +87,9 @@ const Header = () => {
         <Link href="/" className="mr-2 px-3">
           Home
         </Link>
-        <Link href="/" className="mr-2 px-3">
+        {/*  <Link href="/" className="mr-2 px-3">
           Gojūon
-        </Link>
+        </Link> */}
         <div
           className="relative inline-block text-left px-3"
           onMouseEnter={handleMouseEnter}
