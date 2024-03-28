@@ -36,7 +36,8 @@ next-env.d.ts
 
 .contentlayer
 
-content
+/content/stores
+
 
 /public/robots.txt
 /public/sitemap.xml
