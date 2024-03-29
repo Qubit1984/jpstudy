@@ -103,7 +103,7 @@ const Header = () => {
               onMouseLeave={handleMouseLeave}
             >
               <Link
-                href="/grammar/jlpt-n1"
+                href="/categories/jlptn5"
                 className="block px-4 py-4 text-sm text-gray-700 bg-light/70 backdrop-blur-sm text-center"
                 role="menuitem"
               >
@@ -111,7 +111,7 @@ const Header = () => {
               </Link>
               <div className="border-t border-gray-200"></div>
               <Link
-                href="/grammar/jlpt-n2"
+                href="/categories/jlptn4"
                 className="block px-4 py-4 text-sm text-gray-700 bg-light/70 backdrop-blur-sm text-center"
                 role="menuitem"
               >
@@ -127,7 +127,7 @@ const Header = () => {
               </Link>
               <div className="border-t border-gray-200"></div>
               <Link
-                href="/grammar/jlpt-n3"
+                href="/categories/jlptn2"
                 className="block px-4 py-4 text-sm text-gray-700 bg-light/70 backdrop-blur-sm text-center"
                 role="menuitem"
               >
@@ -135,7 +135,7 @@ const Header = () => {
               </Link>
               <div className="border-t border-gray-200"></div>
               <Link
-                href="/grammar/jlpt-n3"
+                href="/categories/jlptn1"
                 className="block px-4 py-4 text-sm text-gray-700 bg-light/70 backdrop-blur-sm text-center"
                 role="menuitem"
               >
