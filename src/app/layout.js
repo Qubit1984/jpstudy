@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import siteMetadata from "../utils/siteMetaData";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAdSense } from "next-google-adsense";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -57,6 +58,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <GoogleAdSense publisherId="pub-8741589583961176" /> {/* 👈 16 digits */}
+      {/* or */}
+      <GoogleAdSense /> {/* if NEXT_PUBLIC_ADSENSE_PUBLISHER_ID is set */}
       <body
         className={cx(
           inter.variable,
