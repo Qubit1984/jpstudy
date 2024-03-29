@@ -1,13 +1,13 @@
 // please update required information
 const siteMetadata = {
-  title: "Japanese Grammar from 0 to N1",
+  title: "Learn Japanese Grammar from 0 to N1",
   author: "Japanese0toN1",
   headerTitle: "Next.js Blog",
   description:
     "Japanese grammar learning websites prepared for English native speakers.",
   language: "en-us",
   theme: "system", // system, dark or light
-  siteUrl: "https://create-blog-with-nextjs.vercel.app", // your website URL
+  siteUrl: "https://www.japanesegrammar.tokyo", // your website URL
   siteLogo: "/logo.png",
   socialBanner: "/social-banner.png", // add social banner in the public folder
   email: "Japanese@gmail.com",
