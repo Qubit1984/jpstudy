@@ -61,15 +61,18 @@ export default function RootLayout({ children }) {
       <GoogleAdSense publisherId="pub-8741589583961176" /> {/* 👈 16 digits */}
       {/* or */}
       <GoogleAdSense /> {/* if NEXT_PUBLIC_ADSENSE_PUBLISHER_ID is set */}
-      <script
-        async
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-JWZ3H0GQQT');
+        `}
+      </Script>
+      <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-JWZ3H0GQQT"
-      ></script>
-      <script>
-        window.dataLayer = window.dataLayer || []; function gtag()
-        {dataLayer.push(arguments)}
-        gtag('js', new Date()); gtag('config', 'G-JWZ3H0GQQT');
-      </script>
+        strategy="afterInteractive"
+      />
       <body
         className={cx(
           inter.variable,
