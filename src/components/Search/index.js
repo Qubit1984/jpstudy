@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Modal from "../Modal";
-import SearchResults from "../SearchResults";
+import SearchResults from "../Searchresults";
 import Fuse from "fuse.js";
 import {
   allMains,
