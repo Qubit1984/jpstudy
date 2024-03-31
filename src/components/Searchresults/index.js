@@ -10,21 +10,28 @@ const SearchResults = ({ results, onClose }) => {
 
   const resultsPerPage = 8;
   const pagesVisited = pageNumber * resultsPerPage;
-  const displayResults = results
-    .slice(pagesVisited, pagesVisited + resultsPerPage)
-    .map((article, index) => (
-      <Link
-        href={`/${article.tags}/${article.id}`}
-        onClick={handleClick}
-        key={index}
-      >
-        <div className="p-4 border-color-white rounded-lg transition duration-200 transform hover:scale-105 hover:bg-gray-100 cursor-pointer">
-          <h1 className="text-lg font-semibold underline decoration-blue-500 underline-offset-4 text-center">
-            {article.title}
-          </h1>
-        </div>
-      </Link>
-    ));
+  const displayResults =
+    results.length > 0 ? (
+      results
+        .slice(pagesVisited, pagesVisited + resultsPerPage)
+        .map((article, index) => (
+          <Link
+            href={`/${article.tags}/${article.id}`}
+            onClick={handleClick}
+            key={index}
+          >
+            <div className="p-4 border-color-white rounded-lg transition duration-200 transform hover:scale-105 hover:bg-gray-100 cursor-pointer">
+              <h1 className="text-lg font-semibold underline decoration-blue-500 underline-offset-4 text-center">
+                {article.title}
+              </h1>
+            </div>
+          </Link>
+        ))
+    ) : (
+      <h2 className="text-2xl m-3 text-center font-semibold text-accent dark:text-accentDark ">
+        Not Found
+      </h2>
+    );
   const pageCount = Math.ceil(results.length / resultsPerPage);
 
   const changePage = ({ selected }) => {
