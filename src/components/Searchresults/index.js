@@ -52,13 +52,13 @@ const SearchResults = ({ results, onClose }) => {
         containerClassName={
           "pagination flex justify-center items-center space-x-2"
         }
-        previousLinkClassName={
+        previousClassName={
           "pagination__link block px-3 py-1 rounded-md bg-gray-200 hover:bg-gray-300"
         }
-        nextLinkClassName={
+        nextClassName={
           "pagination__link block px-3 py-1 rounded-md bg-gray-200 hover:bg-gray-300"
         }
-        disabledClassName={"pagination__link--disabled  opacity-70"}
+        // disabledClassName={"pagination__link--disabled  opacity-70"}
         activeClassName={"pagination__link--active underline font-bold"}
       />
     </div>
