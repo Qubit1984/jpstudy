@@ -76,22 +76,24 @@ const Header = () => {
       </button>
 
       <nav
-        className=" w-max py-3 px-6 sm:px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center flex  sm:hidden
-        fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50
+        className=" w-5/6 mr-0.1 py-2 px-2 sm:px-8 border border-solid border-dark rounded-3xl font-medium capitalize  items-center flex flex-wrap  sm:hidden
+        fixed top-6
+        /* right-1/2 translate-x-1/2 */
+         bg-light/80 backdrop-blur-sm z-50
         transition-all ease duration-300
         "
         style={{
           top: click ? "1rem" : "-5rem",
         }}
       >
-        <Link href="/" className="mr-2 px-3">
+        <Link href="/" className="w-1/4 text-center">
           Home
         </Link>
         {/*  <Link href="/" className="mr-2 px-3">
           Gojūon
         </Link> */}
         <div
-          className="relative inline-block text-left px-3"
+          className="relative inline-block  w-1/4"
           onMouseEnter={handleMouseEnter}
         >
           <button className="inline-flex items-center  py-2 border border-transparent text-base font-medium rounded-md text-gray-700 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-gray-500 ">
@@ -99,7 +101,7 @@ const Header = () => {
           </button>
           {isOpen && (
             <div
-              className="absolute left-1/2 -translate-x-1/2 mt-3 w-48 rounded-md shadow-lg  focus:outline-none  "
+              className="absolute left-1/2 -translate-x-1/2 mt-6 w-48 rounded-md shadow-lg  focus:outline-none  "
               onMouseLeave={handleMouseLeave}
             >
               <Link
@@ -144,13 +146,13 @@ const Header = () => {
             </div>
           )}
         </div>
-        <Link href="/" className="mr-2 px-3">
+        <Link href="/" className="  w-1/4 text-center">
           Vocabulary
         </Link>
-        <Link href="/" className="mr-2 px-3">
+        <Link href="/" className="  w-1/4 text-center">
           Topic
         </Link>
-        <Link href="/contact" className="mx-2 px-3">
+        <Link href="/contact" className="  w-1/4 text-center">
           About
         </Link>
         <button

@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between">
       <div className="mt-2"></div>
-      <InsightRoll insights={insights} className="h-64" />
+      <InsightRoll insights={insights} />
 
       <HomeCoverSection blogs={allMains} />
       <FeaturedPosts blogs={allPosts} />
