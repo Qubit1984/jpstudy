@@ -3,6 +3,7 @@
 const { withContentlayer } = require("next-contentlayer");
 
 const nextConfig = {
+  swcMinify: false,
   compiler: {
     removeConsole: true,
   },
