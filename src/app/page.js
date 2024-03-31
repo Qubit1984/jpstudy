@@ -21,9 +21,7 @@ export default function Home() {
   const allPosts = [...allMains, ...allJlptN3s, ...allJlptN4s, ...allJlptN5s];
   return (
     <main className="flex flex-col items-center justify-between">
-      <div className="mt-2"></div>
       <InsightRoll insights={insights} />
-
       <HomeCoverSection blogs={allMains} />
       <FeaturedPosts blogs={allPosts} />
       <RecentPosts blogs={allPosts} />

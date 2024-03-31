@@ -13,6 +13,7 @@ import siteMetadata from "@/src/utils/siteMetaData";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 import { useState } from "react";
 import { cx } from "@/src/utils";
+import Search from "../Search";
 
 const Header = () => {
   const [mode, setMode] = useThemeSwitch();
@@ -23,6 +24,9 @@ const Header = () => {
   const handleMouseEnter = () => {
     setIsOpen(true);
   };
+  const handelClick = () => {
+    setIsOpen(!isOpen);
+  };
   const handleMouseLeave = () => {
     setTimeout(() => {
       setIsOpen(false);
@@ -31,13 +35,27 @@ const Header = () => {
 
   const toggle = () => {
     setClick(!click);
+    setIsOpen(false);
   };
-  return (
-    <header className="w-full p-4  px-5 sm:px-10 flex items-center justify-between">
-      <Logo />
 
+  const [query, setQuery] = useState("");
+  const [results, setResults] = useState([]);
+
+  const handleSearch = async (event) => {
+    e.preventDefault();
+    const res = await fetch(`/api/search?query=${query}`);
+    const data = await res.json();
+    setResults(data);
+    router.push("/search");
+  };
+
+  return (
+    <header className="w-full p-2  px-2 sm:px-10  grid grid-cols-12 grid-rows-1 sm:grid-rows-2 lg:grid-rows-1">
+      <div className="md:col-span-3 md:row-start-1 sm:row-span-2 sm:row-start-2 hidden sm:flex">
+        <Logo />
+      </div>
       <button
-        className="inline-block sm:hidden z-50"
+        className="inline-block sm:hidden z-50 col-start-12"
         onClick={toggle}
         aria-label="Hamburger Menu"
       >
@@ -95,6 +113,7 @@ const Header = () => {
         <div
           className="relative inline-block  w-1/4"
           onMouseEnter={handleMouseEnter}
+          onClick={handelClick}
         >
           <button className="inline-flex items-center  py-2 border border-transparent text-base font-medium rounded-md text-gray-700 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-gray-500 ">
             Grammar
@@ -172,8 +191,8 @@ const Header = () => {
       </nav>
 
       <nav
-        className="w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center hidden sm:flex
-        fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50"
+        className="w-max py-3 px-8 border border-solid border-dark rounded-full font-medium capitalize  items-center hidden fixed  sm:flex
+        top-4 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-50"
       >
         <Link href="/" className="mr-2 px-3">
           Home
@@ -259,11 +278,15 @@ const Header = () => {
           )}
         </button>
       </nav>
-      <div className=" hidden sm:flex items-center">
+      <div className="  h-16 relative col-start-3 col-span-8 row-start-1 sm:ml-auto sm:row-start-2 sm:col-start-9 sm:col-span-4  lg:row-start-1 lg:col-start-10 lg:col-span-2">
+        <Search />
+      </div>
+
+      <div className=" hidden sm:flex items-center  relative row-span-1 col-start-12">
         <a
           href={siteMetadata.twitter}
           rel="noopener noreferrer"
-          className="inline-block w-6 h-6 mr-4"
+          className="inline-block w-6 h-6 ml-auto mt-3"
           aria-label="Reach out to me via Twitter"
           target="_blank"
         >
