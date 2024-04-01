@@ -20,7 +20,8 @@ export function useThemeSwitch() {
     if (userPref) {
       return userPref;
     }
-    return window.matchMedia(preferDarkQuery).matches ? "dark" : "light";
+    return "dark";
+    /*  return window.matchMedia(preferDarkQuery).matches ? "dark" : "light"; */
   };
 
   const [mode, setMode] = useState("dark");
@@ -43,10 +44,8 @@ export function useThemeSwitch() {
   }, []);
 
   useEffect(() => {
-    toggleTheme(mode)
-  }, [mode])
-  
+    toggleTheme(mode);
+  }, [mode]);
 
-
-  return [mode, setMode]
+  return [mode, setMode];
 }

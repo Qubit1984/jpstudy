@@ -12,7 +12,7 @@ const siteMetadata = {
   socialBanner: "/social-banner.png", // add social banner in the public folder
   email: "japanese@keemail.me",
   github: "https://github.com/",
-  twitter: "https://twitter.com/",
+  twitter: "https://twitter.com/Japanese0toN1/",
   facebook: "https://facebook.com",
   youtube: "https://youtube.com/",
   linkedin: "https://www.linkedin.com/in/",
