@@ -2,7 +2,7 @@ import {
   allJlptN3s,
   allJlptN4s,
   allJlptN5s,
-  allMains,
+  allHomes,
 } from "contentlayer/generated";
 import HomeCoverSection from "../components/Home/HomeCoverSection";
 import FeaturedPosts from "../components/Home/FeaturedPosts";
@@ -18,11 +18,11 @@ const insights = [
 ];
 
 export default function Home() {
-  const allPosts = [...allMains, ...allJlptN3s, ...allJlptN4s, ...allJlptN5s];
+  const allPosts = [...allHomes, ...allJlptN3s, ...allJlptN4s, ...allJlptN5s];
   return (
     <main className="flex flex-col items-center justify-between">
       <InsightRoll insights={insights} />
-      <HomeCoverSection blogs={allMains} />
+      <HomeCoverSection blogs={allHomes} />
       <FeaturedPosts blogs={allPosts} />
       <RecentPosts blogs={allPosts} />
     </main>

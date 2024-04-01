@@ -3,7 +3,7 @@ import Modal from "../Modal";
 import SearchResults from "../Searchresults";
 import Fuse from "fuse.js";
 import {
-  allMains,
+  allHomes,
   allJlptN3s,
   allJlptN4s,
   allJlptN5s,
@@ -13,7 +13,7 @@ const Search = () => {
   const [query, setQuery] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [results, setResults] = useState([]);
-  const allPosts = [...allMains, ...allJlptN3s, ...allJlptN4s, ...allJlptN5s];
+  const allPosts = [...allHomes, ...allJlptN3s, ...allJlptN4s, ...allJlptN5s];
   // 初始化 Fuse.js
   const fuse = new Fuse(allPosts, {
     keys: ["title", "id", "tags"],

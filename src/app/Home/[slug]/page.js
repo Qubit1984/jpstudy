@@ -2,20 +2,20 @@ import BlogDetails from "@/src/components/Blog/BlogDetails";
 import RenderMdx from "@/src/components/Blog/RenderMdx";
 import Tag from "@/src/components/Elements/Tag";
 import siteMetadata from "@/src/utils/siteMetaData";
-import { allMains } from "contentlayer/generated";
+import { allHomes } from "contentlayer/generated";
 import { slug } from "github-slugger";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
-  return allMains.map((blog) => {
+  return allHomes.map((blog) => {
     const [, slugParts] = blog._raw.flattenedPath.split("/");
     return { slug: slugParts };
   });
 }
 
 export async function generateMetadata({ params }) {
-  const blog = allMains.find((blog) => blog._raw.flattenedPath === params.slug);
+  const blog = allHomes.find((blog) => blog._raw.flattenedPath === params.slug);
   if (!blog) {
     return;
   }
@@ -61,7 +61,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default function BlogPage({ params }) {
-  const blog = allMains.find(
+  const blog = allHomes.find(
     (blog) => blog._raw.flattenedPath.split("/")[1] === params.slug
   );
 

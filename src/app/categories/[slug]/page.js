@@ -1,8 +1,8 @@
 import {
-  allMains,
   allJlptN5s,
   allJlptN4s,
   allJlptN3s,
+  allHomes,
 } from "@/.contentlayer/generated";
 import BlogLayoutThree from "@/src/components/Blog/BlogLayoutThree";
 import Categories from "@/src/components/Blog/Categories";
@@ -10,7 +10,7 @@ import GithubSlugger, { slug } from "github-slugger";
 import { sortBlogsByid } from "@/src/utils";
 
 const slugger = new GithubSlugger();
-const allPosts = [...allMains, ...allJlptN5s, ...allJlptN4s, ...allJlptN3s];
+const allPosts = [...allHomes, ...allJlptN5s, ...allJlptN4s, ...allJlptN3s];
 export async function generateStaticParams() {
   const categories = [];
   const paths = [{ slug: "all" }];

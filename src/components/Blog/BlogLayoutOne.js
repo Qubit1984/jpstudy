@@ -44,5 +44,7 @@ const BlogLayoutOne = ({ blog }) => {
     </div>
   );
 };
-
+{
+  /*  <Link href={blog.url} className="mt-6"> */
+}
 export default BlogLayoutOne;

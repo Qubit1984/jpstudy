@@ -6,9 +6,9 @@ import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
 import GithubSlugger from "github-slugger";
 
-const Main = defineDocumentType(() => ({
-  name: "Main",
-  filePathPattern: "main/**/*.mdx",
+const Home = defineDocumentType(() => ({
+  name: "Home",
+  filePathPattern: "Home/**/*.mdx",
   contentType: "mdx",
   fields: {
     id: {
@@ -302,7 +302,7 @@ const codeOptions = {
 export default makeSource({
   /* options */
   contentDirPath: "content",
-  documentTypes: [Main, JlptN3, JlptN4, JlptN5],
+  documentTypes: [Home, JlptN3, JlptN4, JlptN5],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
