@@ -10,7 +10,7 @@ const siteMetadata = {
   siteUrl: "https://www.japanesegrammar.tokyo", // your website URL
   siteLogo: "/logo.png",
   socialBanner: "/social-banner.png", // add social banner in the public folder
-  email: "Japanese@gmail.com",
+  email: "japanese@keemail.me",
   github: "https://github.com/",
   twitter: "https://twitter.com/",
   facebook: "https://facebook.com",
