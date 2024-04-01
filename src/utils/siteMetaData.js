@@ -2,7 +2,7 @@
 const siteMetadata = {
   title: "Learn Japanese Grammar from 0 to N1",
   author: "Japanese0toN1",
-  headerTitle: "Learn Japanese grammar JLPT",
+  headerTitle: "Japanese0toN1",
   description:
     "Japanese grammar learning websites prepared for English native speakers.Learn Japanese grammar JLPT",
   language: "en-us",
