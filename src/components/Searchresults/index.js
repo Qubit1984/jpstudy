@@ -16,7 +16,7 @@ const SearchResults = ({ results, onClose }) => {
         .slice(pagesVisited, pagesVisited + resultsPerPage)
         .map((article, index) => (
           <Link
-            href={`/${article.tags}/${article.id}`}
+            href={`/${article._raw.flattenedPath}`}
             onClick={handleClick}
             key={index}
           >

@@ -15,10 +15,16 @@ const Search = () => {
   const [results, setResults] = useState([]);
   const allPosts = [...allHomes, ...allJlptN3s, ...allJlptN4s, ...allJlptN5s];
   // 初始化 Fuse.js
+
   const fuse = new Fuse(allPosts, {
-    keys: ["title", "id", "tags"],
+    keys: ["title", "_raw.flattenedPath"],
+    weights: {
+      title: 0.8,
+      "_raw.flattenedPath": 0,
+    },
     threshold: 0.3,
   });
+
   function search(query) {
     const results = fuse.search(query);
     return results.map(({ item }) => item);

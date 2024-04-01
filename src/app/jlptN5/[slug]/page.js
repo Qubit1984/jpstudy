@@ -17,7 +17,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const blog = allJlptN5s.find(
-    (blog) => blog._raw.flattenedPath === params.slug
+    (blog) => encodeURIComponent(blog._raw.flattenedPath) === params.slug
   );
   if (!blog) {
     return;
@@ -65,15 +65,24 @@ export async function generateMetadata({ params }) {
 
 export default function BlogPage({ params }) {
   const blog = allJlptN5s.find(
-    (blog) => blog._raw.flattenedPath.split("/")[1] === params.slug
+    (blog) =>
+      encodeURIComponent(blog._raw.flattenedPath.split("/")[1]) === params.slug
   );
 
   if (!blog) {
     notFound();
   }
 
-  const preSlug = (parseInt(params.slug, 10) - 1).toString();
-  const nextSlug = (parseInt(params.slug, 10) + 1).toString();
+  let preSlug = 0;
+  let prevPage = allJlptN5s.find((doc) => doc.id === blog.id - 1);
+  if (prevPage) {
+    preSlug = encodeURIComponent(prevPage._raw.flattenedPath.split("/")[1]);
+  }
+  let nextSlug = 0;
+  let nextPage = allJlptN5s.find((doc) => doc.id === blog.id + 1);
+  if (nextPage) {
+    nextSlug = encodeURIComponent(nextPage._raw.flattenedPath.split("/")[1]);
+  }
 
   let imageList = [siteMetadata.socialBanner];
   if (blog.image) {
