@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import AudioIcon from "../Icons";
+import { AudioIcon } from "../Icons";
 const Myaudio = ({ src }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);

@@ -8,6 +8,7 @@ import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { GoogleAdSense } from "next-google-adsense";
 
+import BackToTop from "../components/Backtotop";
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
@@ -91,6 +92,7 @@ export default function RootLayout({ children }) {
         {children}
         <Analytics />
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );
