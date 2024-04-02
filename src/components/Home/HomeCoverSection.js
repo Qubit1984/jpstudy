@@ -1,4 +1,4 @@
-import { sortBlogs } from "@/src/utils";
+//import { sortBlogs } from "@/src/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -6,9 +6,7 @@ import Tag from "../Elements/Tag";
 import { slug } from "github-slugger";
 
 const HomeCoverSection = ({ blogs }) => {
-  const sortedBlogs = sortBlogs(blogs);
-  const blog = sortedBlogs[0];
-
+  const blog = blogs.find((blog) => blog.id === 1);
   return (
     <div className="w-full inline-block">
       <article className="flex flex-col items-start justify-end mx-5 sm:mx-10 relative h-[60vh] sm:h-[50vh]">

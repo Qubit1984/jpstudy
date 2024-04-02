@@ -85,21 +85,3 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
 h3 {
   @apply text-8xl;
 }
-
-audio::-webkit-media-controls-play-button {
-  display: inline-block;
-}
-/* Style the play button */
-audio::-webkit-media-controls-play-button {
-  width: 50px; /* Adjust width as needed */
-  height: 50px; /* Adjust height as needed */
-  background-color: #007bff; /* Change color as needed */
-  border: none;
-  border-radius: 50%; /* Make it circular */
-  cursor: pointer;
-}
-audio::-webkit-media-controls-play-button::before {
-  content: "▶"; /* Play icon */
-  font-size: 24px; /* Adjust size as needed */
-  color: #fff; /* Change color as needed */
-}

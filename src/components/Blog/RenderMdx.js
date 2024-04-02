@@ -2,10 +2,12 @@
 import React from "react";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import Image from "next/image";
+import Link from "next/link";
 import Myaudio from "../Audio";
 import Example from "../Example/Index";
 const mdxComponents = {
   Image,
+  Link,
   Myaudio,
   Example,
 };
