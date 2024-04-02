@@ -34,7 +34,7 @@ export async function generateMetadata({ params }) {
   return {
     title: `${params.slug.replaceAll("-", " ")} Blogs`,
     description: `Learn more about ${
-      params.slug === "all" ? "web development" : params.slug
+      params.slug === "all" ? "Japanese Grammar" : params.slug
     } through our collection of expert blogs and tutorials`,
   };
 }
