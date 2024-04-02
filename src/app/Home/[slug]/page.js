@@ -15,7 +15,10 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const blog = allHomes.find((blog) => blog._raw.flattenedPath === params.slug);
+  const blog = allHomes.find(
+    (blog) =>
+      encodeURIComponent(blog._raw.flattenedPath.split("/")[1]) === params.slug
+  );
   if (!blog) {
     return;
   }
