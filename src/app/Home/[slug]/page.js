@@ -104,14 +104,14 @@ export default function BlogPage({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <article>
-        <div className="mb-8 text-center relative w-full h-[20vh] bg-dark">
+        <div className="mb-4 text-center relative w-full h-[22vh] bg-dark">
           <div className="w-full z-10 flex flex-col items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <Tag
               name={blog.tags[0]}
               link={`/categories/${slug(blog.tags[0])}`}
-              className="px-6 text-sm py-2"
+              className="px-6 text-sm mt-2"
             />
-            <h1 className="inline-block mt-6 font-semibold capitalize text-light text-2xl md:text-3xl lg:text-5xl !leading-normal relative w-5/6">
+            <h1 className="inline-block  font-semibold capitalize text-light text-2xl md:text-3xl lg:text-5xl !leading-normal relative w-5/6">
               {blog.title}
             </h1>
           </div>
@@ -130,7 +130,7 @@ export default function BlogPage({ params }) {
         </div>
         <BlogDetails blog={blog} slug={params.slug} />
 
-        <div className="grid grid-cols-12  gap-y-8 lg:gap-8 sxl:gap-16 mt-8 px-5 md:px-10">
+        <div className="grid grid-cols-12  gap-y-8 lg:gap-8 sxl:gap-16 mt-5 px-5 md:px-10">
           <div className="col-span-12  lg:col-span-4">
             <details
               className="border-[1px] border-solid border-dark dark:border-light text-dark dark:text-light rounded-lg p-4 sticky top-6 max-h-[80vh] overflow-hidden overflow-y-auto"

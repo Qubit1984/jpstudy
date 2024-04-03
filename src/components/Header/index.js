@@ -38,17 +38,6 @@ const Header = () => {
     setIsOpen(false);
   };
 
-  const [query, setQuery] = useState("");
-  const [results, setResults] = useState([]);
-
-  const handleSearch = async (event) => {
-    e.preventDefault();
-    const res = await fetch(`/api/search?query=${query}`);
-    const data = await res.json();
-    setResults(data);
-    router.push("/search");
-  };
-
   return (
     <header className="w-full p-2  px-2 sm:px-10  grid grid-cols-12 grid-rows-1 sm:grid-rows-2 lg:grid-rows-1">
       <div className="md:col-span-3 md:row-start-1 sm:row-span-2 sm:row-start-2 hidden sm:flex">
@@ -107,7 +96,7 @@ const Header = () => {
         <Link href="/" className="w-1/4 text-center">
           Home
         </Link>
-        <Link href="/" className="w-1/4 text-center">
+        <Link href="/categories/gojuon" className="w-1/4 text-center">
           Gojūon
         </Link>
         <div
@@ -197,7 +186,7 @@ const Header = () => {
         <Link href="/" className="mr-2 px-3">
           Home
         </Link>
-        <Link href="/" className="mr-2 px-3">
+        <Link href="/categories/gojuon" className="mr-2 px-3">
           Gojūon
         </Link>
         <div
