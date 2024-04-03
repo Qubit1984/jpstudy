@@ -3,8 +3,8 @@ import React from "react";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import Image from "next/image";
 import Link from "next/link";
-import Myaudio from "../Audio";
 import Example from "../Example";
+import Myaudio from "../Audio";
 import Gojuon from "../Gojuon";
 const mdxComponents = {
   Image,
