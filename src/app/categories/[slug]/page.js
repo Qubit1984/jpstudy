@@ -1,4 +1,5 @@
 import {
+  allGojuons,
   allJlptN5s,
   allJlptN4s,
   allJlptN3s,
@@ -10,7 +11,13 @@ import GithubSlugger, { slug } from "github-slugger";
 import { sortBlogsByid } from "@/src/utils";
 
 const slugger = new GithubSlugger();
-const allPosts = [...allHomes, ...allJlptN5s, ...allJlptN4s, ...allJlptN3s];
+const allPosts = [
+  ...allHomes,
+  ...allGojuons,
+  ...allJlptN5s,
+  ...allJlptN4s,
+  ...allJlptN3s,
+];
 export async function generateStaticParams() {
   const categories = [];
   const paths = [{ slug: "all" }];

@@ -107,9 +107,9 @@ const Header = () => {
         <Link href="/" className="w-1/4 text-center">
           Home
         </Link>
-        {/*  <Link href="/" className="mr-2 px-3">
+        <Link href="/" className="w-1/4 text-center">
           Gojūon
-        </Link> */}
+        </Link>
         <div
           className="relative inline-block  w-1/4"
           onMouseEnter={handleMouseEnter}
@@ -197,9 +197,9 @@ const Header = () => {
         <Link href="/" className="mr-2 px-3">
           Home
         </Link>
-        {/*         <Link href="/" className="mr-2 px-3">
+        <Link href="/" className="mr-2 px-3">
           Gojūon
-        </Link> */}
+        </Link>
         <div
           className="relative inline-block text-left px-3"
           onMouseEnter={handleMouseEnter}

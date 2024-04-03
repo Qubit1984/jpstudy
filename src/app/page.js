@@ -1,4 +1,5 @@
 import {
+  allGojuons,
   allJlptN3s,
   allJlptN4s,
   allJlptN5s,
@@ -18,7 +19,13 @@ const insights = [
 ];
 
 export default function Home() {
-  const allPosts = [...allHomes, ...allJlptN3s, ...allJlptN4s, ...allJlptN5s];
+  const allPosts = [
+    ...allHomes,
+    ...allGojuons,
+    ...allJlptN3s,
+    ...allJlptN4s,
+    ...allJlptN5s,
+  ];
   return (
     <main className="flex flex-col items-center justify-between">
       <InsightRoll insights={insights} />

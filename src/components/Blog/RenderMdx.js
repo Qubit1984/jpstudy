@@ -4,10 +4,12 @@ import { useMDXComponent } from "next-contentlayer/hooks";
 import Image from "next/image";
 import Link from "next/link";
 import Myaudio from "../Audio";
-import Example from "../Example/Index";
+import Example from "../Example";
+import Gojuon from "../Gojuon";
 const mdxComponents = {
   Image,
   Link,
+  Gojuon,
   Myaudio,
   Example,
 };

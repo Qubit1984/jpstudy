@@ -40,7 +40,7 @@ export default function ContactForm() {
         className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-gray 
         focus:border-gray bg-transparent"
       />
-      Here are some details about my suggestions: <br />
+      · Here are some details about my suggestions: <br />
       <textarea
         {...register("project details", {})}
         placeholder="My suggestions is about..."
