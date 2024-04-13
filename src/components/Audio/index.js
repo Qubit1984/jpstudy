@@ -1,28 +1,15 @@
-import React, { useRef, useState, useEffect } from "react";
 import { AudioIcon } from "../Icons";
+import { useRef } from "react";
 const Myaudio = ({ src }) => {
-  const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
-
-  useEffect(() => {
-    const handleEnded = () => {
-      setIsPlaying(false);
-    };
-
-    audioRef.current.addEventListener("ended", handleEnded);
-
-    return () => {
-      audioRef.current.removeEventListener("ended", handleEnded);
-    };
-  }, []);
-
   const handlePlayPause = () => {
-    if (isPlaying) {
+    /*     if (isPlaying) {
       audioRef.current.pause();
     } else {
       audioRef.current.play();
     }
-    setIsPlaying(!isPlaying);
+    setIsPlaying(!isPlaying); */
+    audioRef.current.play();
   };
 
   return (
