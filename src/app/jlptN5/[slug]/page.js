@@ -229,13 +229,13 @@ export default function BlogPage({ params }) {
               <MyadUnit />
             </div>
             <div className="mt-4 h-full xl:col-span-3 xl:col-start-1  xl:flex hidden">
-              <MyadUnitcol />
+              <MyadUnitcol className="h-full" />
             </div>
           </div>
 
           <RenderMdx blog={blog} />
           <div className="col-span-12 h-full xl:col-start-4  xl:col-span-7 ">
-            <MyadUnit />
+            <MyadUnit className="h-full" />
           </div>
           <div className="flex  col-span-12 h-18  mt-20 justify-around ">
             <Link

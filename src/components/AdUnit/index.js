@@ -22,7 +22,12 @@ class InFeedAdBlack extends React.Component {
       <div className="container mx-auto text-center" aria-hidden={true}>
         <ins
           className="adsbygoogle"
-          style={{ display: "block", width: "100%", textAlign: "center" }}
+          style={{
+            display: "block",
+            width: "100%",
+            height: "100%",
+            textAlign: "center",
+          }}
           data-ad-client="ca-pub-8741589583961176"
           data-ad-slot="3743129188"
           data-ad-layout="in-article"
@@ -53,7 +58,12 @@ class InFeedAdWhite extends React.Component {
       <div className="container mx-auto text-center" aria-hidden={true}>
         <ins
           className="adsbygoogle"
-          style={{ display: "block", width: "100%", textAlign: "center" }}
+          style={{
+            display: "block",
+            width: "100%",
+            height: "100%",
+            textAlign: "center",
+          }}
           data-ad-client="ca-pub-8741589583961176"
           data-ad-slot="6776486639"
           data-ad-layout="in-article"
@@ -84,7 +94,7 @@ class InFeedCol extends React.Component {
       <div className="container mx-auto text-center" aria-hidden={true}>
         <ins
           className="adsbygoogle"
-          style={{ display: "block" }}
+          style={{ display: "block", width: "100%", height: "100%" }}
           data-ad-client="ca-pub-8741589583961176"
           data-ad-slot="2123426769"
           data-ad-format="autorelaxed"
@@ -115,10 +125,10 @@ class InFeedRow extends React.Component {
 
   render() {
     return (
-      <div className="container mx-auto text-center" aria-hidden={true}>
+      <div className="container mx-auto h-full text-center" aria-hidden={true}>
         <ins
           className="adsbygoogle"
-          style={{ display: "block" }}
+          style={{ display: "block", width: "100%", height: "100%" }}
           data-ad-format="autorelaxed"
           data-ad-client="ca-pub-8741589583961176"
           data-ad-slot="6025144768"
