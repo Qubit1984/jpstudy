@@ -210,7 +210,7 @@ class InFeedRow extends React.Component {
   }
 }
 
-export const MyadUnit = () => {
+/* export const MyadUnit = () => {
   const router = useRouter();
   const [mode] = useThemeSwitch();
   return mode === "dark" ? (
@@ -218,7 +218,7 @@ export const MyadUnit = () => {
   ) : (
     <InFeedAdWhite router={router} />
   );
-};
+}; */
 
 export const MyadUnitcol = () => {
   const router = useRouter();
@@ -233,4 +233,126 @@ export const MyadUnitrow = () => {
 export const MyadUnitside = () => {
   const router = useRouter();
   return <Siderad router={router} />;
+};
+
+class InFeed extends React.Component {
+  renderAds() {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  }
+
+  componentDidMount() {
+    this.renderAds();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.router.asPath !== prevProps.router.asPath) {
+      this.renderAds();
+    }
+  }
+
+  render() {
+    const { adCode } = this.props;
+
+    return (
+      <div className="container mx-auto my-auto text-center" aria-hidden={true}>
+        {adCode}
+      </div>
+    );
+  }
+}
+const adCode0 = (
+  <ins
+    className="adsbygoogle"
+    style={{
+      display: "block",
+      width: "100%",
+      height: "auto",
+      textAlign: "center",
+    }}
+    data-ad-client="ca-pub-8741589583961176"
+    data-ad-slot="6776486639"
+    data-ad-layout="in-article"
+    data-ad-format="fluid"
+    data-full-width-responsive="true"
+  />
+);
+const adCode1 = (
+  <ins
+    className="adsbygoogle"
+    style={{
+      display: "block",
+      width: "100%",
+      height: "auto",
+      textAlign: "center",
+    }}
+    data-ad-client="ca-pub-8741589583961176"
+    data-ad-slot="3679017176"
+    data-ad-layout="in-article"
+    data-ad-format="fluid"
+    data-full-width-responsive="true"
+  />
+);
+const adCode2 = (
+  <ins
+    className="adsbygoogle"
+    style={{
+      display: "block",
+      width: "100%",
+      height: "auto",
+      textAlign: "center",
+    }}
+    data-ad-client="ca-pub-8741589583961176"
+    data-ad-slot="5632578317"
+    data-ad-layout="in-article"
+    data-ad-format="fluid"
+    data-full-width-responsive="true"
+  />
+);
+const adCode3 = (
+  <ins
+    className="adsbygoogle"
+    style={{
+      display: "block",
+      width: "100%",
+      height: "auto",
+      textAlign: "center",
+    }}
+    data-ad-client="ca-pub-8741589583961176"
+    data-ad-slot="6776486639"
+    data-ad-layout="in-article"
+    data-ad-format="fluid"
+    data-full-width-responsive="true"
+  />
+);
+const adCodetext = (
+  <ins
+    className="adsbygoogle"
+    style={{
+      display: "block",
+      width: "100%",
+      height: "auto",
+      textAlign: "center",
+    }}
+    data-ad-client="ca-pub-8741589583961176"
+    data-ad-slot="6776486639"
+    data-ad-layout="in-article"
+    data-ad-format="fluid"
+    data-full-width-responsive="true"
+  />
+);
+export const MyadUnit = () => {
+  const router = useRouter();
+  return <InFeed adCode={adCode0} router={router} />;
+};
+export const MyadUnit1 = () => {
+  const router = useRouter();
+  return <InFeed adCode={adCode1} router={router} />;
+};
+export const MyadUnit2 = () => {
+  const router = useRouter();
+  return <InFeed adCode={adCode2} router={router} />;
+};
+export const MyadUnittext = () => {
+  const router = useRouter();
+  return <InFeed adCode={adCode0} router={router} />;
 };
