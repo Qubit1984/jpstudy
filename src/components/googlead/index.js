@@ -21,5 +21,5 @@
      data-ad-slot="6776486639"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script> */
+</script>*/
 }

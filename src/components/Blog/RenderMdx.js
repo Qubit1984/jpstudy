@@ -23,7 +23,7 @@ const RenderMdx = ({ blog }) => {
 
   return (
     <div
-      className="col-span-12  md:col-span-7 font-in prose sm:prose-base md:prose-lg max-w-max
+      className="col-span-12 md:col-span-7  font-in prose sm:prose-base md:prose-lg max-w-max
     no-quotes
     prose-blockquote:bg-accent/20 
     prose-blockquote:p-2
@@ -41,7 +41,9 @@ const RenderMdx = ({ blog }) => {
     "
     >
       <MDXContent components={mdxComponents} />
-      <MyadUnit className="w-full" />
+      {/*     <div>
+        <MyadUnit className="w-1/2" />
+      </div> */}
     </div>
   );
 };

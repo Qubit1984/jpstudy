@@ -1,3 +1,4 @@
+import MyadUnit from "@/src/components/AdUnit";
 import BlogDetails from "@/src/components/Blog/BlogDetails";
 import RenderMdx from "@/src/components/Blog/RenderMdx";
 import Tag from "@/src/components/Elements/Tag";
@@ -191,7 +192,7 @@ export default function BlogPage({ params }) {
         </div>
         <BlogDetails blog={blog} slug={params.slug} />
 
-        <div className="grid grid-cols-12  gap-y-8 lg:gap-8 sxl:gap-16 mt-5 px-5 md:px-10">
+        <div className="grid grid-cols-12 grid-rows-3 gap-y-8 lg:gap-8 sxl:gap-16 mt-5 px-5 md:px-10">
           <div className="col-span-12  sm:col-span-3">
             <details className="border-[1px] border-solid border-dark dark:border-light text-dark dark:text-light rounded-lg p-4 sticky top-6 max-h-[80vh] overflow-hidden overflow-y-auto">
               <summary className="text-lg font-semibold capitalize cursor-pointer">
@@ -226,6 +227,10 @@ export default function BlogPage({ params }) {
             </details>
           </div>
           <RenderMdx blog={blog} />
+          {/*  <div className="flex row-start-2 col-span-12">
+            <MyadUnit />
+          </div> */}
+
           <div className="flex col-span-12 h-18  mt-20 justify-around ">
             <Link
               href={`/jlptN5/${preSlug}`}
