@@ -2,17 +2,17 @@ import { sortBlogsUpdate } from "@/src/utils";
 import React from "react";
 import BlogLayoutOne from "../Blog/BlogLayoutOne";
 import BlogLayoutTwo from "../Blog/BlogLayoutTwo";
-import { MyadUnitrow } from "@/src/components/AdUnit";
+import { MyadUnit } from "@/src/components/AdUnit";
 const FeaturedPosts = ({ blogs }) => {
   const sortedBlogs = sortBlogsUpdate(blogs);
   return (
     <section className="w-full mt-2 sm:mt-4  md:mt-6 px-5 sm:px-10 md:px-24  sxl:px-32 flex flex-col items-center justify-center">
-      <div className="w-full h-15 items-end flex-col-reverse flex sm:flex-row">
+      <div className="w-full h-10 items-end flex-col-reverse flex sm:flex-row">
         <h2 className="sm:w-1/2 w-full inline-block font-bold capitalize text-2xl md:text-4xl text-dark dark:text-light">
           Recent Updates
         </h2>
         <div className="sm:w-1/2 w-full">
-          <MyadUnitrow className="w-full h-15" />
+          <MyadUnit className="w-full" />
         </div>
       </div>
 

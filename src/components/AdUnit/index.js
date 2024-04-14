@@ -24,7 +24,7 @@ class InFeedAdBlack extends React.Component {
           className="adsbygoogle"
           style={{ display: "block", width: "100%", textAlign: "center" }}
           data-ad-client="ca-pub-8741589583961176"
-          data-ad-slot="6776486639"
+          data-ad-slot="3743129188"
           data-ad-layout="in-article"
           data-ad-format="fluid"
           data-full-width-responsive="true"
@@ -55,7 +55,7 @@ class InFeedAdWhite extends React.Component {
           className="adsbygoogle"
           style={{ display: "block", width: "100%", textAlign: "center" }}
           data-ad-client="ca-pub-8741589583961176"
-          data-ad-slot="3743129188"
+          data-ad-slot="6776486639"
           data-ad-layout="in-article"
           data-ad-format="fluid"
           data-full-width-responsive="true"
