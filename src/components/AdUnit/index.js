@@ -148,7 +148,7 @@ export const MyadUnitcol = () => {
   return <InFeedCol router={router} />;
 };
 
-export const MyadUniterow = () => {
+export const MyadUnitrow = () => {
   const router = useRouter();
   return <InFeedRow router={router} />;
 };
