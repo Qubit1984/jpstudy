@@ -6,7 +6,7 @@ import Link from "next/link";
 import Example from "../Example";
 import Myaudio from "../Audio";
 import Gojuon from "../Gojuon";
-import MyadUnit from "../AdUnit";
+import { MyadUnit } from "../AdUnit";
 const mdxComponents = {
   Image,
   Link,
@@ -41,9 +41,6 @@ const RenderMdx = ({ blog }) => {
     "
     >
       <MDXContent components={mdxComponents} />
-      {/*     <div>
-        <MyadUnit className="w-1/2" />
-      </div> */}
     </div>
   );
 };

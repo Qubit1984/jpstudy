@@ -7,7 +7,7 @@ import { slug } from "github-slugger";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import MyadUnit from "@/src/components/AdUnit";
+import { MyadUnit } from "@/src/components/AdUnit";
 export async function generateStaticParams() {
   return allJlptN4s.map((blog) => {
     const [, slugParts] = blog._raw.flattenedPath.split("/");
