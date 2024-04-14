@@ -59,9 +59,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <GoogleAdSense publisherId="pub-8741589583961176" /> {/* 👈 16 digits */}
-      {/* or */}
-      <GoogleAdSense /> {/* if NEXT_PUBLIC_ADSENSE_PUBLISHER_ID is set */}
+      {/*      <GoogleAdSense publisherId="pub-8741589583961176" /> 
+      
+      <GoogleAdSense />  */}
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8741589583961176"
+        crossOrigin="anonymous"
+        strategy="lazyOnload"
+      />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];

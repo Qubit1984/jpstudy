@@ -6,12 +6,14 @@ import Link from "next/link";
 import Example from "../Example";
 import Myaudio from "../Audio";
 import Gojuon from "../Gojuon";
+import MyadUnit from "../AdUnit";
 const mdxComponents = {
   Image,
   Link,
   Gojuon,
   Myaudio,
   Example,
+  MyadUnit,
 };
 
 /*    first-letter:text-3xl
