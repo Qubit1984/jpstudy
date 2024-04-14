@@ -98,7 +98,7 @@ class InFeedCol extends React.Component {
           data-ad-client="ca-pub-8741589583961176"
           data-ad-slot="2123426769"
           data-ad-format="autorelaxed"
-          data-matched-content-rows-num="10"
+          data-matched-content-rows-num="5"
           data-matched-content-columns-num="1"
           data-matched-content-ui-type="image_stacked"
           data-full-width-responsive="true"
@@ -134,7 +134,7 @@ class InFeedRow extends React.Component {
           data-ad-slot="6025144768"
           data-matched-content-rows-num="2,2"
           data-matched-content-columns-num="1,4"
-          data-matched-content-ui-type="image_card_stacked"
+          data-matched-content-ui-type="image_stacked,image_stacked"
           data-full-width-responsive="true"
         ></ins>
       </div>

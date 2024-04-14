@@ -28,8 +28,8 @@ const RecentPosts = ({ blogs }) => {
           );
         })}
       </div>
-      <div className="w-full">
-        <MyadUnitrow className="w-full" />
+      <div className="w-full h-auto flex">
+        <MyadUnitrow />
       </div>
     </section>
   );

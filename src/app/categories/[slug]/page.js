@@ -81,7 +81,9 @@ const CategoryPage = ({ params }) => {
             Discover more categories and expand your knowledge!
           </span>
         </div>
-        <MyadUnit className="w-1/2" />
+        <div className="w-1/2">
+          <MyadUnit />
+        </div>
       </div>
 
       <Categories categories={allCategories} currentSlug={params.slug} />
