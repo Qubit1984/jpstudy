@@ -2,7 +2,7 @@ import { sortBlogs } from "@/src/utils";
 import Link from "next/link";
 import React from "react";
 import BlogLayoutThree from "../Blog/BlogLayoutThree";
-import { MyadUnit } from "../AdUnit";
+import { MyadUnitrow } from "../AdUnit";
 const RecentPosts = ({ blogs }) => {
   const sortedBlogs = sortBlogs(blogs);
   return (
@@ -29,7 +29,7 @@ const RecentPosts = ({ blogs }) => {
         })}
       </div>
       <div className="w-full">
-        <MyadUnit className="w-full" />
+        <MyadUnitrow className="w-full" />
       </div>
     </section>
   );
