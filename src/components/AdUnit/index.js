@@ -74,7 +74,7 @@ class InFeedAdWhite extends React.Component {
     );
   }
 }
-class InFeedColblack extends React.Component {
+/* class InFeedColblack extends React.Component {
   renderAds() {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
   }
@@ -106,7 +106,7 @@ class InFeedColblack extends React.Component {
       </div>
     );
   }
-}
+} */
 class InFeedColwhite extends React.Component {
   renderAds() {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
@@ -178,8 +178,6 @@ class InFeedRow extends React.Component {
 export const MyadUnit = () => {
   const router = useRouter();
   const [mode] = useThemeSwitch();
-  console.log("mode", mode);
-  //return <InFeedAdBlack router={router} />;
   return mode === "dark" ? (
     <InFeedAdBlack router={router} />
   ) : (
@@ -189,14 +187,8 @@ export const MyadUnit = () => {
 
 export const MyadUnitcol = () => {
   const router = useRouter();
-  const [mode] = useThemeSwitch();
-  console.log("mode", mode);
   //return <InFeedAdBlack router={router} />;
-  return mode === "dark" ? (
-    <InFeedColblack router={router} />
-  ) : (
-    <InFeedColwhite router={router} />
-  );
+  return <InFeedColwhite router={router} />;
 };
 
 export const MyadUnitrow = () => {
