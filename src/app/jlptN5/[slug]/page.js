@@ -192,9 +192,9 @@ export default function BlogPage({ params }) {
         </div>
         <BlogDetails blog={blog} slug={params.slug} />
 
-        <div className="grid grid-cols-12  grid-flow-row gap-y-8 lg:gap-8 sxl:gap-16 mt-5 px-5 md:px-10">
-          <div className="col-span-12  sm:col-span-3">
-            <details className="border-[1px] border-solid border-dark dark:border-light text-dark dark:text-light rounded-lg p-4 sticky top-6 max-h-[80vh] overflow-hidden overflow-y-auto">
+        <div className="grid grid-cols-12  grid-auto-rows-auto  gap-y-8 lg:gap-8 sxl:gap-16 mt-5 px-5 md:px-10">
+          <div className="col-span-12  xl:col-span-3 ">
+            <details className="border-[1px] sticky border-solid border-dark dark:border-light text-dark dark:text-light rounded-lg p-4  top-6 max-h-[80vh] overflow-hidden overflow-y-auto">
               <summary className="text-lg font-semibold capitalize cursor-pointer">
                 Table Of Content
               </summary>
@@ -225,13 +225,17 @@ export default function BlogPage({ params }) {
                 })}
               </ul>
             </details>
-          </div>
-          <RenderMdx blog={blog} />
-          <div className="col-span-7 col-start-4">
-            <MyadUnit />
+            <div className="col-span-12 xl:col-span-3 xl:col-start-1 ">
+              hello
+              <MyadUnit />
+            </div>
           </div>
 
-          <div className="flex col-span-12 h-18  mt-20 justify-around ">
+          <RenderMdx blog={blog} />
+          <div className="col-span-12  xl:col-span-7 ">
+            <MyadUnit />
+          </div>
+          <div className="flex  col-span-12 h-18  mt-20 justify-around ">
             <Link
               href={`/jlptN5/${preSlug}`}
               className="tflex items-center px-6 py-3 w-48  bg-blue-500 text-white rounded-md text-center hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
