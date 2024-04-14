@@ -226,10 +226,10 @@ export const MyadUnitcol = () => {
   return <InFeedColwhite router={router} />;
 };
 
-export const MyadUnitrow = () => {
+/* export const MyadUnitrow = () => {
   const router = useRouter();
   return <InFeedRow router={router} />;
-};
+}; */
 export const MyadUnitside = () => {
   const router = useRouter();
   return <Siderad router={router} />;
