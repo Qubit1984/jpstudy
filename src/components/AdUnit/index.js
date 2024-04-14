@@ -74,6 +74,41 @@ class InFeedAdWhite extends React.Component {
     );
   }
 }
+class Siderad extends React.Component {
+  renderAds() {
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  }
+
+  componentDidMount() {
+    this.renderAds();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.router.asPath !== prevProps.router.asPath) {
+      this.renderAds();
+    }
+  }
+
+  render() {
+    return (
+      <div className="container mx-auto my-auto text-center" aria-hidden={true}>
+        <ins
+          className="adsbygoogle"
+          style={{
+            display: "block",
+            width: "100%",
+            height: "auto",
+            textAlign: "center",
+          }}
+          data-ad-client="ca-pub-8741589583961176"
+          data-ad-slot="4058291124"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+      </div>
+    );
+  }
+}
 /* class InFeedColblack extends React.Component {
   renderAds() {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
@@ -131,9 +166,9 @@ class InFeedColwhite extends React.Component {
           data-ad-client="ca-pub-8741589583961176"
           data-ad-slot="2625989642"
           data-ad-format="autorelaxed"
-          //  data-matched-content-rows-num="5"
-          //  data-matched-content-columns-num="1"
-          //  data-matched-content-ui-type="image_stacked"
+          data-matched-content-ui-type="image_stacked"
+          data-matched-content-rows-num="4"
+          data-matched-content-columns-num="1"
           data-full-width-responsive="true"
         ></ins>
       </div>
@@ -194,4 +229,8 @@ export const MyadUnitcol = () => {
 export const MyadUnitrow = () => {
   const router = useRouter();
   return <InFeedRow router={router} />;
+};
+export const MyadUnitside = () => {
+  const router = useRouter();
+  return <Siderad router={router} />;
 };
