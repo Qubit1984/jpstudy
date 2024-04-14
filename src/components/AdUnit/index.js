@@ -13,7 +13,7 @@ const InFeedAdBlack = () => {
   return (
     <ins
       className="adsbygoogle"
-      style={{ display: "block", textAlign: "center" }}
+      style={{ display: "block", width: "100%", textAlign: "center" }}
       data-ad-layout="in-article"
       data-ad-format="fluid"
       data-ad-client="ca-pub-8741589583961176"
@@ -25,7 +25,7 @@ const InFeedAdWhite = () => {
   return (
     <ins
       className="adsbygoogle"
-      style={{ display: "block", textAlign: "center" }}
+      style={{ display: "block", width: "100%", textAlign: "center" }}
       data-ad-layout="in-article"
       data-ad-format="fluid"
       data-ad-client="ca-pub-8741589583961176"
