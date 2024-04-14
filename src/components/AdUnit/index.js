@@ -12,7 +12,8 @@ const MyadUnit = () => {
 const InFeedAdBlack = () => {
   return (
     <ins
-      className="adsbygoogle block text-center"
+      className="adsbygoogle"
+      style={{ display: "block", textAlign: "center" }}
       data-ad-layout="in-article"
       data-ad-format="fluid"
       data-ad-client="ca-pub-8741589583961176"
@@ -23,11 +24,12 @@ const InFeedAdBlack = () => {
 const InFeedAdWhite = () => {
   return (
     <ins
-      className="adsbygoogle block text-center"
+      className="adsbygoogle"
+      style={{ display: "block", textAlign: "center" }}
       data-ad-layout="in-article"
       data-ad-format="fluid"
       data-ad-client="ca-pub-8741589583961176"
-      data-ad-slot="6776486639"
+      data-ad-slot="3743129188"
     ></ins>
   );
 };
