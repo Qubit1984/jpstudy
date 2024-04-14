@@ -106,5 +106,6 @@ export const MyadUnit = () => {
 };
 
 export const MyadUnitrow = () => {
+  const router = useRouter();
   return <InFeedRow router={router} />;
 };
