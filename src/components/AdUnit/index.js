@@ -129,7 +129,7 @@ class InFeedColwhite extends React.Component {
           className="adsbygoogle"
           style={{ display: "block", width: "100%", height: "auto" }}
           data-ad-client="ca-pub-8741589583961176"
-          data-ad-slot="5911779913"
+          data-ad-slot="2625989642"
           data-ad-format="autorelaxed"
           //  data-matched-content-rows-num="5"
           //  data-matched-content-columns-num="1"
@@ -140,6 +140,7 @@ class InFeedColwhite extends React.Component {
     );
   }
 }
+
 class InFeedRow extends React.Component {
   renderAds() {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
@@ -165,7 +166,7 @@ class InFeedRow extends React.Component {
           data-ad-client="ca-pub-8741589583961176"
           data-ad-slot="6025144768"
           data-matched-content-rows-num="2,2"
-          data-matched-content-columns-num="1,4"
+          data-matched-content-columns-num="1,3"
           data-matched-content-ui-type="image_stacked,image_stacked"
           data-full-width-responsive="true"
         ></ins>
@@ -173,6 +174,7 @@ class InFeedRow extends React.Component {
     );
   }
 }
+
 export const MyadUnit = () => {
   const router = useRouter();
   const [mode] = useThemeSwitch();
