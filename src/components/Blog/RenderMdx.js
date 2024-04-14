@@ -41,7 +41,7 @@ const RenderMdx = ({ blog }) => {
     "
     >
       <MDXContent components={mdxComponents} />
-      <MyadUnit />
+      <MyadUnit className="w-full" />
     </div>
   );
 };
