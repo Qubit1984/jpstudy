@@ -4,7 +4,7 @@ import { useThemeSwitch } from "../Hooks/useThemeSwitch";
 const MyadUnit = () => {
   const [mode, setMode] = useThemeSwitch();
   return (
-    <GoogleAdUnit className="w-full height-60 col-span-12">
+    <GoogleAdUnit>
       {mode === "dark" ? <InFeedAdBlack /> : <InFeedAdWhite />}
     </GoogleAdUnit>
   );
@@ -17,7 +17,6 @@ const InFeedAdBlack = () => {
         display: "block",
         width: "100%",
         textAlign: "center",
-        //gridColumn: "span 12/span 12",
       }}
       data-ad-layout="in-article"
       data-ad-format="fluid"

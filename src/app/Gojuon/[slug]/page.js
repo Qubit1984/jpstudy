@@ -178,9 +178,9 @@ export default function BlogPage({ params }) {
             </details>
           </div>
           <RenderMdx blog={blog} />
-          <div className="flex ">
+          {/*          <div className="col-span-7 col-start-4">
             <MyadUnit />
-          </div>
+          </div> */}
           <div className="flex col-span-12 h-18  mt-20 justify-around ">
             <Link
               href={`/Gojuon/${preSlug}`}
