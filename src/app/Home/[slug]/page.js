@@ -6,7 +6,7 @@ import { allHomes } from "contentlayer/generated";
 import { slug } from "github-slugger";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import MyadUnit from "@/src/components/AdUnit";
+import { MyadUnit } from "@/src/components/AdUnit";
 export async function generateStaticParams() {
   return allHomes.map((blog) => {
     const [, slugParts] = blog._raw.flattenedPath.split("/");

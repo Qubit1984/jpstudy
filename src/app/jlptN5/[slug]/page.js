@@ -1,4 +1,4 @@
-import MyadUnit from "@/src/components/AdUnit";
+import { MyadUnit } from "@/src/components/AdUnit";
 import BlogDetails from "@/src/components/Blog/BlogDetails";
 import RenderMdx from "@/src/components/Blog/RenderMdx";
 import Tag from "@/src/components/Elements/Tag";

@@ -2,7 +2,7 @@ import { sortBlogsUpdate } from "@/src/utils";
 import React from "react";
 import BlogLayoutOne from "../Blog/BlogLayoutOne";
 import BlogLayoutTwo from "../Blog/BlogLayoutTwo";
-import MyadUnit from "../AdUnit";
+import { MyadUnitrow } from "@/src/components/AdUnit";
 const FeaturedPosts = ({ blogs }) => {
   const sortedBlogs = sortBlogsUpdate(blogs);
   return (
@@ -12,7 +12,7 @@ const FeaturedPosts = ({ blogs }) => {
           Recent Updates
         </h2>
         <div className="sm:w-1/2 w-full">
-          <MyadUnit className="w-full h-15" />
+          <MyadUnitrow className="w-full h-15" />
         </div>
       </div>
 
