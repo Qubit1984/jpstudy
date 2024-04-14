@@ -55,13 +55,13 @@ class InFeedAdWhite extends React.Component {
 
   render() {
     return (
-      <div className="container mx-auto text-center" aria-hidden={true}>
+      <div className="container mx-auto my-auto text-center" aria-hidden={true}>
         <ins
           className="adsbygoogle"
           style={{
             display: "block",
             width: "100%",
-            height: "100%",
+            height: "auto",
             textAlign: "center",
           }}
           data-ad-client="ca-pub-8741589583961176"
@@ -91,10 +91,10 @@ class InFeedCol extends React.Component {
 
   render() {
     return (
-      <div className="container mx-auto text-center" aria-hidden={true}>
+      <div className="container mx-auto my-auto text-center" aria-hidden={true}>
         <ins
           className="adsbygoogle"
-          style={{ display: "block", width: "100%", height: "100%" }}
+          style={{ display: "block", width: "100%", height: "auto" }}
           data-ad-client="ca-pub-8741589583961176"
           data-ad-slot="2123426769"
           data-ad-format="autorelaxed"
