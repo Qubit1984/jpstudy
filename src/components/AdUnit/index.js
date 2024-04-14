@@ -176,7 +176,7 @@ class InFeedColwhite extends React.Component {
   }
 }
 
-class InFeedRow extends React.Component {
+/* class InFeedRow extends React.Component {
   renderAds() {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
   }
@@ -208,7 +208,7 @@ class InFeedRow extends React.Component {
       </div>
     );
   }
-}
+} */
 
 /* export const MyadUnit = () => {
   const router = useRouter();
@@ -340,6 +340,32 @@ const adCodetext = (
     data-full-width-responsive="true"
   />
 );
+
+const adstream = (
+  <ins
+    className="adsbygoogle"
+    style={{
+      display: "block",
+      width: "100%",
+      height: "auto",
+      textAlign: "center",
+    }}
+    data-ad-format="fluid"
+    data-ad-layout-key="-5p+bc+y+29+eq"
+    data-ad-client="ca-pub-8741589583961176"
+    data-ad-slot="5730465444"
+    data-full-width-responsive="true"
+  />
+);
+
+<ins
+  class="adsbygoogle"
+  style="display:block"
+  data-ad-format="fluid"
+  data-ad-layout-key="-5p+bc+y+29+eq"
+  data-ad-client="ca-pub-8741589583961176"
+  data-ad-slot="5730465444"
+></ins>;
 export const MyadUnit = () => {
   const router = useRouter();
   return <InFeed adCode={adCode0} router={router} />;
@@ -351,6 +377,10 @@ export const MyadUnit1 = () => {
 export const MyadUnit2 = () => {
   const router = useRouter();
   return <InFeed adCode={adCode2} router={router} />;
+};
+export const Myadstream = () => {
+  const router = useRouter();
+  return <InFeed adCode={adstream} router={router} />;
 };
 export const MyadUnittext = () => {
   const router = useRouter();
