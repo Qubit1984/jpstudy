@@ -73,7 +73,7 @@ const CategoryPage = ({ params }) => {
   return (
     <article className="mt-12 flex flex-col text-dark dark:text-light">
       <div className="flex">
-        <div className="w-1/2 px-5 sm:px-10  md:px-24  sxl:px-32 flex flex-col">
+        <div className="w-1/2 px-5 sm:px-10  md:px-24  sxl:px-32 flex flex-col justify-center">
           <h1 className="mt-4 font-semibold text-2xl md:text-4xl lg:text-5xl">
             #{params.slug}
           </h1>
@@ -94,6 +94,12 @@ const CategoryPage = ({ params }) => {
             <BlogLayoutThree blog={blog} />
           </article>
         ))}
+        <div className="lg:col-span-2 col-span-1 ">
+          <MyadUnit />
+        </div>
+        <div className="lg:col-span-2 col-span-1">
+          <MyadUnit />
+        </div>
       </div>
     </article>
   );
