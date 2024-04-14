@@ -97,12 +97,13 @@ class InFeedRow extends React.Component {
 export const MyadUnit = () => {
   const router = useRouter();
   const [mode] = useThemeSwitch();
-
-  return mode === "light" ? (
+  console.log("mode", mode);
+  return <InFeedAdBlack router={router} />;
+  /*  return mode === "light" ? (
     <InFeedAdWhite router={router} />
   ) : (
     <InFeedAdBlack router={router} />
-  );
+  ); */
 };
 
 export const MyadUnitrow = () => {
