@@ -176,8 +176,14 @@ export default function BlogPage({ params }) {
                 })}
               </ul>
             </details>
+            <div className="mt-4 col-span-12 xl:col-span-3 xl:col-start-1 ">
+              <MyadUnit />
+            </div>
           </div>
           <RenderMdx blog={blog} />
+          <div className="col-span-12 xl:col-start-4  xl:col-span-7 ">
+            <MyadUnit />
+          </div>
           <div className="flex col-span-12 h-18  mt-20 justify-around ">
             <Link
               href={`/jlptN3/${preSlug}`}
