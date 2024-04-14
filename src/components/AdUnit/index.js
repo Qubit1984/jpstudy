@@ -84,7 +84,7 @@ class InFeedRow extends React.Component {
       <div className="container mx-auto text-center" aria-hidden={true}>
         <ins
           className="adsbygoogle"
-          style={{ display: "block", width: "100%" }}
+          style={{ display: "block", width: "728px", height: "90px" }}
           data-ad-client="ca-pub-8741589583961176"
           data-ad-slot="9073979933"
           data-ad-format="auto"
@@ -109,3 +109,15 @@ export const MyadUnitrow = () => {
   const router = useRouter();
   return <InFeedRow router={router} />;
 };
+{
+  /* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8741589583961176"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-8741589583961176"
+     data-ad-slot="2123426769"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script> */
+}
