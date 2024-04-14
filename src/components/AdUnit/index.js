@@ -1,12 +1,9 @@
 "use client";
 import GoogleAdUnit from "nextjs13_google_adsense";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch";
-import { useEffect } from "react";
+//import { useEffect } from "react";
 const MyadUnit = () => {
   const [mode, setMode] = useThemeSwitch();
-  useEffect(() => {
-    (window.adsbygoogle = window.adsbygoogle || []).push({});
-  }, []);
 
   return (
     <GoogleAdUnit>
