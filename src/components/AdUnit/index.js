@@ -30,6 +30,37 @@ class InFeed extends React.Component {
     );
   }
 }
+
+class InFeedlgonly extends React.Component {
+  renderAds() {
+    if (window.innerWidth >= 1081) {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    }
+  }
+
+  componentDidMount() {
+    this.renderAds();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.router.asPath !== prevProps.router.asPath) {
+      this.renderAds();
+    }
+  }
+
+  render() {
+    const { adCode } = this.props;
+
+    return (
+      <div
+        className="container mx-auto my-auto w-full h-full text-center"
+        aria-hidden={true}
+      >
+        {adCode}
+      </div>
+    );
+  }
+}
 const adCode0 = (
   <ins
     className="adsbygoogle"
@@ -275,15 +306,15 @@ export const Myadfang = () => {
 
 export const MyadUnitside = () => {
   const router = useRouter();
-  return <InFeed adCode={adsider} router={router} />;
+  return <InFeedlgonly adCode={adsider} router={router} />;
 };
 export const Myadsider2 = () => {
   const router = useRouter();
-  return <InFeed adCode={adsider2} router={router} />;
+  return <InFeedlgonly adCode={adsider2} router={router} />;
 };
 export const Myadsider3 = () => {
   const router = useRouter();
-  return <InFeed adCode={adsider3} router={router} />;
+  return <InFeedlgonly adCode={adsider3} router={router} />;
 };
 export const MyadUnitcol = () => {
   const router = useRouter();
