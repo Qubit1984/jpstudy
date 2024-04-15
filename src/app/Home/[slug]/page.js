@@ -6,6 +6,7 @@ import { allHomes } from "contentlayer/generated";
 import { slug } from "github-slugger";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import {
   MyadUnit,
   MyadUnit2,
