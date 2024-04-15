@@ -1,7 +1,7 @@
 import {
   MyadUnit,
   MyadUnit2,
-  MyadUnitcol,
+  Myadsider3,
   Myadsider2,
   MyadUnitside,
 } from "@/src/components/AdUnit";
@@ -234,14 +234,17 @@ export default function BlogPage({ params }) {
             <div className="mt-4 col-span-12 xl:col-span-3 xl:col-start-1 ">
               <MyadUnit />
             </div>
-            {/*    <div className="mt-4 h-full xl:col-span-3 xl:col-start-1  xl:block hidden">
+            <div className="mt-4 h-auto xl:col-span-3 xl:col-start-1">
               <Myadsider2 className="h-full" />
-            </div> */}
+            </div>
+            <div className="mt-4 h-auto xl:col-span-3 xl:col-start-1">
+              <Myadsider3 className="h-full" />
+            </div>
           </div>
           <RenderMdx blog={blog} />
-          {/*   <div className="xl:col-span-2  xl:col-start-11 hidden xl:block">
+          <div className="xl:col-span-2  xl:col-start-11 ">
             <MyadUnitside />
-          </div> */}
+          </div>
           <div className="col-span-12 h-full xl:col-start-4  xl:col-span-7 ">
             <MyadUnit2 className="h-full" />
           </div>
