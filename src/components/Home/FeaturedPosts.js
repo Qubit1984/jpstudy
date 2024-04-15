@@ -9,10 +9,10 @@ const FeaturedPosts = ({ blogs }) => {
   const sortedBlogs = sortBlogsUpdate(blogs);
   return (
     <section className="w-full mt-2 sm:mt-4  md:mt-6 px-5 sm:px-10 md:px-24  sxl:px-32 flex flex-col items-center justify-center">
-      <div className="w-full h-36 items-end flex-col-reverse flex sm:flex-row">
+      <div className="w-full h-auto items-end flex-col-reverse flex sm:flex-row">
         <div className="sm:w-1/2 w-full flex flex-col items-start ">
           <Link
-            className="flex heartbeat items-center justify-center mb-8 h-18 px-4 bg-accent dark:bg-accentDark text-white dark:text-dark  rounded-full duration-200 ease-in-out hover:scale-110  hover:underline 
+            className="flex items-center justify-center mb-8 h-18 px-4 bg-accent dark:bg-accentDark text-white dark:text-dark  rounded-full duration-200 ease-in-out hover:scale-110  hover:underline 
             "
             href="https://ai.japanesegrammar.tokyo"
           >
@@ -31,7 +31,7 @@ const FeaturedPosts = ({ blogs }) => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 grid-rows-2  gap-6  mt-10 sm:mt-16">
+      <div className="grid grid-cols-2 grid-rows-2  gap-6  mt-16 sm:mt-16">
         <article className=" col-span-2 row-span-1 sxl:col-span-1 sxl:row-span-2  relative">
           <BlogLayoutOne blog={sortedBlogs[0]} />
         </article>
