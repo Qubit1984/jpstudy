@@ -87,7 +87,7 @@ h3 {
 }
 
 @media (max-width: 1280px) {
-  .adslot_1 {
+  .adslot_col {
     display: none;
   }
 }
