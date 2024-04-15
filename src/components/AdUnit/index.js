@@ -350,7 +350,7 @@ const adstream0 = (
       textAlign: "center",
     }}
     data-ad-format="fluid"
-    data-ad-layout-key="-6a+dg-1i-2y+mc"
+    data-ad-layout-key="-5h+dg-1i-2y+mc"
     data-ad-client="ca-pub-8741589583961176"
     data-ad-slot="8231338416"
     data-full-width-responsive="true"
