@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.adslot_col {
+.adsider {
   display: none; /* 默认不显示 */
   width: 100%; /* 宽度取决于父元素 */
   height: auto; /* 高度自适应 */
 }
 
 @media (min-width: 1024px) {
-  .adslot_col {
+  .adsider {
     display: block; /* 在宽度大于等于 1024px 时显示 */
   }
 }
