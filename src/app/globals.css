@@ -2,15 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-.adsider {
-  display: none; /* 默认不显示 */
-  width: 100%; /* 宽度取决于父元素 */
-  height: auto; /* 高度自适应 */
+/* .adsider {
+  display: none; 
+  width: 100%; 
+  height: auto; 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1081px) {
   .adsider {
-    display: block; /* 在宽度大于等于 1024px 时显示 */
+    display: block;
+  }
+} */
+.adsider {
+  display: block;
+  width: 150px;
+  height: 350px;
+}
+@media (max-width: 1081px) {
+  .adsider {
+    display: none;
   }
 }
 
