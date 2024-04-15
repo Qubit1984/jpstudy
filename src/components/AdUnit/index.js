@@ -37,7 +37,7 @@ class InFeedlgonly extends React.Component {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
     }
   }
-  shoudredender() {
+  shouldredender() {
     const mediaQuery = window.matchMedia("(min-width: 1081px)");
     return mediaQuery.matches;
   }
@@ -54,7 +54,7 @@ class InFeedlgonly extends React.Component {
   render() {
     const { adCode } = this.props;
 
-    if (shoulfredender()) {
+    if (shouldredender()) {
       return (
         <div
           className="container mx-auto my-auto w-full h-full text-center"
