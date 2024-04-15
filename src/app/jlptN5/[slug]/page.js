@@ -240,7 +240,7 @@ export default function BlogPage({ params }) {
           </div>
           <RenderMdx blog={blog} />
           <div className="xl:col-span-2  xl:col-start-11 hidden xl:block">
-            <Isxlad />
+            <MyadUnitside />
           </div>
           <div className="col-span-12 h-full xl:col-start-4  xl:col-span-7 ">
             <MyadUnit2 className="h-full" />

@@ -164,7 +164,7 @@ const ad1 = (
 );
 const adcol = (
   <ins
-    className="adsbygoogle"
+    className="adsbygoogle adslot_col"
     style={{ display: "block", width: "100%", height: "auto" }}
     data-ad-client="ca-pub-8741589583961176"
     data-ad-slot="2625989642"

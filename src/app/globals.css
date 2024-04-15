@@ -85,3 +85,9 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
 h3 {
   @apply text-8xl;
 }
+
+@media (max-width: 1280px) {
+  .adslot_1 {
+    display: none;
+  }
+}
