@@ -79,12 +79,12 @@ export default function BlogPage({ params }) {
   }
 
   let preSlug = 0;
-  let prevPage = allGojuons.find((doc) => doc.id === blog.id - 1);
+  let prevPage = allHomes.find((doc) => doc.id === blog.id - 1);
   if (prevPage) {
     preSlug = encodeURIComponent(prevPage._raw.flattenedPath.split("/")[1]);
   }
   let nextSlug = 0;
-  let nextPage = allGojuons.find((doc) => doc.id === blog.id + 1);
+  let nextPage = allHomes.find((doc) => doc.id === blog.id + 1);
   if (nextPage) {
     nextSlug = encodeURIComponent(nextPage._raw.flattenedPath.split("/")[1]);
   }
