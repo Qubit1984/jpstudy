@@ -4,6 +4,7 @@ import {
   MyadUnitcol,
   MyadUnitside,
 } from "@/src/components/AdUnit";
+import Isxlad from "@/src/components/AdUnit/isxl";
 import BlogDetails from "@/src/components/Blog/BlogDetails";
 import RenderMdx from "@/src/components/Blog/RenderMdx";
 import Tag from "@/src/components/Elements/Tag";
@@ -233,13 +234,13 @@ export default function BlogPage({ params }) {
             <div className="mt-4 col-span-12 xl:col-span-3 xl:col-start-1 ">
               <MyadUnit />
             </div>
-            <div className="mt-4 h-full xl:col-span-3 xl:col-start-1  xl:flex hidden">
+            <div className="mt-4 h-full xl:col-span-3 xl:col-start-1  xl:block hidden">
               <MyadUnitcol className="h-full" />
             </div>
           </div>
           <RenderMdx blog={blog} />
           <div className="xl:col-span-2  xl:col-start-11 hidden xl:block">
-            <MyadUnitside />
+            <Isxlad />
           </div>
           <div className="col-span-12 h-full xl:col-start-4  xl:col-span-7 ">
             <MyadUnit2 className="h-full" />
