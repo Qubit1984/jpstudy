@@ -88,8 +88,8 @@ h3 {
 
 .adsider {
   display: block;
-  width: 150px;
-  height: 350px;
+  width: 100%;
+  height: auto;
 }
 @media (max-width: 1081px) {
   .adsider {
@@ -98,8 +98,8 @@ h3 {
 }
 .ad1 {
   display: block;
-  width: 150px;
-  height: 350px;
+  width: 100%;
+  height: auto;
 }
 @media (max-width: 640px) {
   .ad1 {
