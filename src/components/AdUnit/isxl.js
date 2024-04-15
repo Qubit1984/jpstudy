@@ -20,7 +20,7 @@ export default function Isxlad() {
   }, []);
 
   return (
-    <div className="w-full h-auto flex">
+    <div className="w-full h-full flex">
       {!isSmallScreen && <MyadUnitside />}
     </div>
   );
