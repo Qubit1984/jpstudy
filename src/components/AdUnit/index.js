@@ -21,7 +21,10 @@ class InFeed extends React.Component {
     const { adCode } = this.props;
 
     return (
-      <div className="container mx-auto my-auto text-center" aria-hidden={true}>
+      <div
+        className="container mx-auto my-auto w-full h-auto text-center"
+        aria-hidden={true}
+      >
         {adCode}
       </div>
     );

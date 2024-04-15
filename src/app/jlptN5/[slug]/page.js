@@ -234,12 +234,12 @@ export default function BlogPage({ params }) {
             <div className="mt-4 col-span-12 lg:col-span-3 lg:col-start-1 ">
               <MyadUnit />
             </div>
-            {/*    <div className="mt-4 h-auto lg:col-span-3 lg:col-start-1">
+            <div className="mt-4 h-auto w-full">
               <Myadsider2 className="h-full" />
-            </div> */}
-            {/*    <div className="mt-4 h-auto lg:col-span-3 lg:col-start-1">
+            </div>
+            <div className="mt-4 h-auto w-full">
               <Myadsider3 className="h-full" />
-            </div> */}
+            </div>
           </div>
           <RenderMdx blog={blog} />
           <div className="lg:col-span-2  lg:col-start-11 ">
