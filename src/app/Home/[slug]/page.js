@@ -8,9 +8,10 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import {
-  MyadUnit,
+  Myadfang,
   MyadUnit2,
-  MyadUnitcol,
+  Myadsider3,
+  Myadsider2,
   MyadUnitside,
 } from "@/src/components/AdUnit";
 export async function generateStaticParams() {
