@@ -20,6 +20,9 @@ const RecentPosts = ({ blogs }) => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-16 mt-16">
+        <div className="col-span-1 w-full h-auto">
+          <Myadstream0 />
+        </div>
         {sortedBlogs.slice(0, 6).map((blog, index) => {
           return (
             <article key={index} className="col-span-1 row-span-1 relative">
@@ -33,11 +36,8 @@ const RecentPosts = ({ blogs }) => {
         <div className="col-span-1 w-full h-auto">
           <Myadstream />
         </div>
-        <div className="col-span-1 w-full h-auto">
-          <Myadstream />
-        </div>
       </div>
-      <div className="w-full flex h-auto">
+      <div className="w-full flex h-auto mt-4">
         <div className="sm:w-1/2 w-full h-auto ">
           <MyadUnit1 />
         </div>

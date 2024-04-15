@@ -340,7 +340,22 @@ const adCodetext = (
     data-full-width-responsive="true"
   />
 );
-
+const adstream0 = (
+  <ins
+    className="adsbygoogle"
+    style={{
+      display: "block",
+      width: "100%",
+      height: "auto",
+      textAlign: "center",
+    }}
+    data-ad-format="fluid"
+    data-ad-layout-key="-6a+dg-1i-2y+mc"
+    data-ad-client="ca-pub-8741589583961176"
+    data-ad-slot="8231338416"
+    data-full-width-responsive="true"
+  />
+);
 const adstream = (
   <ins
     className="adsbygoogle"
@@ -351,21 +366,13 @@ const adstream = (
       textAlign: "center",
     }}
     data-ad-format="fluid"
-    data-ad-layout-key="-5p+bc+y+29+eq"
+    data-ad-layout-key="-62+dg-1i-2y+mc"
     data-ad-client="ca-pub-8741589583961176"
     data-ad-slot="5730465444"
     data-full-width-responsive="true"
   />
 );
 
-<ins
-  class="adsbygoogle"
-  style="display:block"
-  data-ad-format="fluid"
-  data-ad-layout-key="-5p+bc+y+29+eq"
-  data-ad-client="ca-pub-8741589583961176"
-  data-ad-slot="5730465444"
-></ins>;
 export const MyadUnit = () => {
   const router = useRouter();
   return <InFeed adCode={adCode0} router={router} />;
@@ -381,6 +388,10 @@ export const MyadUnit2 = () => {
 export const Myadstream = () => {
   const router = useRouter();
   return <InFeed adCode={adstream} router={router} />;
+};
+export const Myadstream0 = () => {
+  const router = useRouter();
+  return <InFeed adCode={adstream0} router={router} />;
 };
 export const MyadUnittext = () => {
   const router = useRouter();
