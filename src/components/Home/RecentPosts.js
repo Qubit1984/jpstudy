@@ -34,7 +34,7 @@ const RecentPosts = ({ blogs }) => {
           <Myadstream />
         </div>
       </div>
-      <div className="w-full flex h-auto mt-6">
+      <div className="w-full flex h-auto mt-12 items-center">
         <div className="sm:w-1/2 w-full h-auto hidden sm:block">
           <Myadrow />
         </div>
