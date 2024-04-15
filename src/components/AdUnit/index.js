@@ -366,11 +366,24 @@ const adstream = (
       textAlign: "center",
     }}
     data-ad-format="fluid"
-    data-ad-layout-key="-62+dg-1i-2y+mc"
+    data-ad-layout-key="-55+dg-1i-2y+mc"
     data-ad-client="ca-pub-8741589583961176"
     data-ad-slot="5730465444"
     data-full-width-responsive="true"
   />
+);
+const adrow = (
+  <ins
+    className="adsbygoogle"
+    style={{ display: "block", width: "100%", height: "100%" }}
+    data-ad-format="autorelaxed"
+    data-ad-client="ca-pub-8741589583961176"
+    data-ad-slot="6025144768"
+    data-matched-content-rows-num="1"
+    data-matched-content-columns-num="2"
+    data-matched-content-ui-type="image_card_stacked"
+    data-full-width-responsive="true"
+  ></ins>
 );
 
 export const MyadUnit = () => {
@@ -392,6 +405,10 @@ export const Myadstream = () => {
 export const Myadstream0 = () => {
   const router = useRouter();
   return <InFeed adCode={adstream0} router={router} />;
+};
+export const Myadrow = () => {
+  const router = useRouter();
+  return <InFeed adCode={adrow} router={router} />;
 };
 export const MyadUnittext = () => {
   const router = useRouter();
