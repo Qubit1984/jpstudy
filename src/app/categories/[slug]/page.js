@@ -72,7 +72,7 @@ const CategoryPage = ({ params }) => {
   const sortBlogs = sortBlogsByid(blogs);
   return (
     <article className="mt-12 flex flex-col text-dark dark:text-light">
-      <div className="flex">
+      <div className="flex flex-col sm:flex-row">
         <div className="w-full sm:w-1/2 px-5 sm:px-10  md:px-24  sxl:px-32 flex flex-col justify-center">
           <h1 className="mt-4 font-semibold text-2xl md:text-4xl lg:text-5xl">
             #{params.slug}
