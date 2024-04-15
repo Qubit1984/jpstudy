@@ -64,6 +64,39 @@ class InFeedlgonly extends React.Component {
     );
   }
 }
+class InFeedsmonly extends React.Component {
+  renderAds() {
+    if (window.innerWidth >= 640) {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    }
+  }
+
+  componentDidMount() {
+    this.renderAds();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (this.props.router.asPath !== prevProps.router.asPath) {
+      this.renderAds();
+    }
+  }
+
+  render() {
+    const { adCode } = this.props;
+
+    return (
+      typeof window !== "undefined" &&
+      window.innerWidth >= 640 && (
+        <div
+          className="container mx-auto my-auto w-full h-full text-center"
+          aria-hidden={true}
+        >
+          {adCode}
+        </div>
+      )
+    );
+  }
+}
 const adCode0 = (
   <ins
     className="adsbygoogle"
@@ -191,8 +224,8 @@ const adrow = (
 );
 const ad1 = (
   <ins
-    className="adsbygoogle"
-    style={{ display: "block", width: "100%", height: "100%" }}
+    className="adsbygoogle ad1"
+    style={{ width: "100%", height: "100%" }}
     data-ad-client="ca-pub-8741589583961176"
     data-ad-slot="9549456803"
     data-ad-format="auto"
@@ -300,7 +333,7 @@ export const Myadtext = () => {
 };
 export const Myad1 = () => {
   const router = useRouter();
-  return <InFeed adCode={ad1} router={router} />;
+  return <InFeedsmonly adCode={ad1} router={router} />;
 };
 export const Myadfang = () => {
   const router = useRouter();
