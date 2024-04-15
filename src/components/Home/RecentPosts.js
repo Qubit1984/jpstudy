@@ -20,7 +20,7 @@ const RecentPosts = ({ blogs }) => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-16 mt-16">
-        <div className="col-span-1 w-full h-auto">
+        <div className="flex col-span-1 w-full h-auto">
           <Myadstream0 />
         </div>
         {sortedBlogs.slice(0, 7).map((blog, index) => {
@@ -30,11 +30,11 @@ const RecentPosts = ({ blogs }) => {
             </article>
           );
         })}
-        <div className="col-span-1 w-full h-auto">
+        <div className="flex col-span-1 w-full h-auto">
           <Myadstream />
         </div>
       </div>
-      <div className="w-full flex h-auto mt-12 items-center">
+      <div className="w-full flex h-auto xl:mt-15 mt-10 items-start">
         <div className="sm:w-1/2 w-full h-auto hidden sm:block">
           <Myad1 />
         </div>
