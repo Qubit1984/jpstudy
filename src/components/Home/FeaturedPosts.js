@@ -26,7 +26,7 @@ const FeaturedPosts = ({ blogs }) => {
           </h2>
         </div>
 
-        <div className="sm:w-1/2 w-auto h-full">
+        <div className="sm:w-1/2 w-full h-auto">
           <MyadUnit />
         </div>
       </div>
