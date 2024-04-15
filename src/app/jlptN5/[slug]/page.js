@@ -5,7 +5,6 @@ import {
   Myadsider2,
   MyadUnitside,
 } from "@/src/components/AdUnit";
-import Isxlad from "@/src/components/AdUnit/isxl";
 import BlogDetails from "@/src/components/Blog/BlogDetails";
 import RenderMdx from "@/src/components/Blog/RenderMdx";
 import Tag from "@/src/components/Elements/Tag";
