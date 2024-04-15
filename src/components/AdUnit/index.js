@@ -4,9 +4,7 @@ import { useRouter } from "next/navigation";
 
 class InFeed extends React.Component {
   renderAds() {
-    if (window.innerWidth > 1081) {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    }
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
   }
 
   componentDidMount() {
@@ -35,14 +33,11 @@ class InFeed extends React.Component {
 
 class InFeedlgonly extends React.Component {
   renderAds() {
-    if (shoudredender()) {
+    if (window.innerWidth >= 1081) {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
     }
   }
-  shouldredender() {
-    const mediaQuery = window.matchMedia("(min-width: 1081px)");
-    return mediaQuery.matches;
-  }
+
   componentDidMount() {
     this.renderAds();
   }
@@ -56,18 +51,14 @@ class InFeedlgonly extends React.Component {
   render() {
     const { adCode } = this.props;
 
-    if (this.shouldredender()) {
-      return (
-        <div
-          className="container mx-auto my-auto w-full h-full text-center"
-          aria-hidden={true}
-        >
-          {adCode}
-        </div>
-      );
-    }
-
-    return null;
+    return (
+      <div
+        className="container mx-auto my-auto w-full h-full text-center"
+        aria-hidden={true}
+      >
+        {adCode}
+      </div>
+    );
   }
 }
 const adCode0 = (
