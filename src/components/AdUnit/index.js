@@ -54,7 +54,7 @@ class InFeedlgonly extends React.Component {
   render() {
     const { adCode } = this.props;
 
-    if (shouldredender()) {
+    if (this.shouldredender()) {
       return (
         <div
           className="container mx-auto my-auto w-full h-full text-center"
