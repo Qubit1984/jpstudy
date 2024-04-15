@@ -199,7 +199,7 @@ export default function BlogPage({ params }) {
         <BlogDetails blog={blog} slug={params.slug} />
 
         <div className="grid grid-cols-12  grid-auto-rows-auto  gap-y-8 lg:gap-8 sxl:gap-16 mt-5 px-5 md:px-10">
-          <div className="col-span-12  xl:col-span-3 ">
+          <div className="col-span-12  lg:col-span-3 ">
             <details className="border-[1px] sticky border-solid border-dark dark:border-light text-dark dark:text-light rounded-lg p-4  top-6 max-h-[80vh] overflow-hidden overflow-y-auto">
               <summary className="text-lg font-semibold capitalize cursor-pointer">
                 Table Of Content
@@ -231,21 +231,21 @@ export default function BlogPage({ params }) {
                 })}
               </ul>
             </details>
-            <div className="mt-4 col-span-12 xl:col-span-3 xl:col-start-1 ">
+            <div className="mt-4 col-span-12 lg:col-span-3 lg:col-start-1 ">
               <MyadUnit />
             </div>
-            <div className="mt-4 h-auto xl:col-span-3 xl:col-start-1">
+            {/*    <div className="mt-4 h-auto lg:col-span-3 lg:col-start-1">
               <Myadsider2 className="h-full" />
-            </div>
-            <div className="mt-4 h-auto xl:col-span-3 xl:col-start-1">
+            </div> */}
+            {/*    <div className="mt-4 h-auto lg:col-span-3 lg:col-start-1">
               <Myadsider3 className="h-full" />
-            </div>
+            </div> */}
           </div>
           <RenderMdx blog={blog} />
-          <div className="xl:col-span-2  xl:col-start-11 ">
+          <div className="lg:col-span-2  lg:col-start-11 ">
             <MyadUnitside />
           </div>
-          <div className="col-span-12 h-full xl:col-start-4  xl:col-span-7 ">
+          <div className="col-span-12 h-full lg:col-start-4  lg:col-span-7 ">
             <MyadUnit2 className="h-full" />
           </div>
           <div className="flex  col-span-12 h-18  mt-20 justify-around ">
