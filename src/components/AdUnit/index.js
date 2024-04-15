@@ -385,6 +385,16 @@ const adrow = (
     data-full-width-responsive="true"
   ></ins>
 );
+const ad1 = (
+  <ins
+    className="adsbygoogle"
+    style={{ display: "block", width: "100%", height: "100%" }}
+    data-ad-client="ca-pub-8741589583961176"
+    data-ad-slot="9549456803"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+);
 
 export const MyadUnit = () => {
   const router = useRouter();
@@ -413,4 +423,8 @@ export const Myadrow = () => {
 export const MyadUnittext = () => {
   const router = useRouter();
   return <InFeed adCode={adCode0} router={router} />;
+};
+export const Myad1 = () => {
+  const router = useRouter();
+  return <InFeed adCode={ad1} router={router} />;
 };

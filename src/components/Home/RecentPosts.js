@@ -2,7 +2,7 @@ import { sortBlogs } from "@/src/utils";
 import Link from "next/link";
 import React from "react";
 import BlogLayoutThree from "../Blog/BlogLayoutThree";
-import { MyadUnit1, Myadrow, Myadstream, Myadstream0 } from "../AdUnit";
+import { MyadUnit1, Myad1, Myadstream, Myadstream0 } from "../AdUnit";
 const RecentPosts = ({ blogs }) => {
   const sortedBlogs = sortBlogs(blogs);
   return (
@@ -36,7 +36,7 @@ const RecentPosts = ({ blogs }) => {
       </div>
       <div className="w-full flex h-auto mt-12 items-center">
         <div className="sm:w-1/2 w-full h-auto hidden sm:block">
-          <Myadrow />
+          <Myad1 />
         </div>
         <div className="sm:w-1/2 w-full h-auto ">
           <MyadUnit1 />
