@@ -242,7 +242,7 @@ export default function BlogPage({ params }) {
             </div>
           </div>
           <RenderMdx blog={blog} />
-          <div className="lg:col-span-2  lg:col-start-11 ">
+          <div className="lg:col-span-2  lg:col-start-11 h-full">
             <MyadUnitside />
           </div>
           <div className="col-span-12 h-full lg:col-start-4  lg:col-span-7 ">
