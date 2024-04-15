@@ -73,7 +73,7 @@ const CategoryPage = ({ params }) => {
   return (
     <article className="mt-12 flex flex-col text-dark dark:text-light">
       <div className="flex">
-        <div className="w-1/2 px-5 sm:px-10  md:px-24  sxl:px-32 flex flex-col justify-center">
+        <div className="w-full sm:w-1/2 px-5 sm:px-10  md:px-24  sxl:px-32 flex flex-col justify-center">
           <h1 className="mt-4 font-semibold text-2xl md:text-4xl lg:text-5xl">
             #{params.slug}
           </h1>
@@ -81,7 +81,7 @@ const CategoryPage = ({ params }) => {
             Discover more categories and expand your knowledge!
           </span>
         </div>
-        <div className="w-1/2">
+        <div className="w-1/2 hidden sm:block">
           <MyadUnit />
         </div>
       </div>
