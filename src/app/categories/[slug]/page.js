@@ -81,7 +81,7 @@ const CategoryPage = ({ params }) => {
             Discover more categories and expand your knowledge!
           </span>
         </div>
-        <div className="w-1/2 hidden sm:block">
+        <div className="w-full sm:w-1/2 h-auto">
           <MyadUnit />
         </div>
       </div>

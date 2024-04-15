@@ -190,6 +190,22 @@ const adsider = (
     data-full-width-responsive="true"
   ></ins>
 );
+const adsuoyin = (
+  <ins
+    class="adsbygoogle adsuoyin"
+    style={{
+      display: "block",
+      width: "100%",
+      height: "auto",
+      textAlign: "center",
+    }}
+    data-ad-client="ca-pub-8741589583961176"
+    data-ad-slot="9537315680"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+);
+
 export const MyadUnit = () => {
   const router = useRouter();
   return <InFeed adCode={adCode0} router={router} />;
@@ -201,6 +217,10 @@ export const MyadUnit1 = () => {
 export const MyadUnit2 = () => {
   const router = useRouter();
   return <InFeed adCode={adCode2} router={router} />;
+};
+export const Myadsuoyin = () => {
+  const router = useRouter();
+  return <InFeed adCode={adsuoyin} router={router} />;
 };
 export const Myadstream = () => {
   const router = useRouter();
