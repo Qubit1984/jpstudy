@@ -180,18 +180,18 @@ export default function BlogPage({ params }) {
                 })}
               </ul>
             </details>
-            <div className="mt-4 col-span-12 xl:col-span-3 xl:col-start-1 ">
-              <MyadUnit />
+            <div className="mt-4 col-span-12 lg:col-span-3 lg:col-start-1 h-auto">
+              <Myadfang />
             </div>
-            <div className="mt-4 h-full xl:col-span-3 xl:col-start-1  xl:flex hidden">
-              <MyadUnitcol className="h-full" />
+            <div className="mt-4 h-full w-full hidden lg:block">
+              <Myadsider2 className="h-full" />
             </div>
           </div>
           <RenderMdx blog={blog} />
-          <div className="xl:col-span-2  xl:col-start-11 hidden xl:block">
+          <div className="lg:col-span-2  lg:col-start-11 h-full  hidden lg:block">
             <MyadUnitside />
           </div>
-          <div className="col-span-12 h-full xl:col-start-4  xl:col-span-7 ">
+          <div className="col-span-12 h-full lg:col-start-4  lg:col-span-7 ">
             <MyadUnit2 className="h-full" />
           </div>
           <div className="flex col-span-12 h-18  mt-20 justify-around ">

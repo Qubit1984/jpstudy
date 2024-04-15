@@ -12,12 +12,12 @@ const FeaturedPosts = ({ blogs }) => {
       <div className="w-full h-36 items-end flex-col-reverse flex sm:flex-row">
         <div className="sm:w-1/2 w-full flex flex-col items-start ">
           <Link
-            className="flex items-center justify-center mb-8 h-18 px-4 bg-blue-500 text-white   hover:text-yellow-600 rounded-full duration-200 ease-in-out   hover:scale-110 hover:bg-blue-700 hover:underline before:absolute before:bottom-0 before:left-0 before:w-full before:h-1 before:scale-x-0 before:origin-left before:transition before:duration-200 before:ease-in-out before:hover:scale-x-100"
-            /* className="mb-8 flex justify-between  items-center  px-4 py-2 bg-blue-500 text-white rounded-full transition duration-200 ease-in-out transform hover:scale-110 hover:bg-blue-600" */
+            className="flex heartbeat items-center justify-center mb-8 h-18 px-4 bg-accent dark:bg-accentDark text-white dark:text-dark  rounded-full duration-200 ease-in-out hover:scale-110  hover:underline 
+            "
             href="https://ai.japanesegrammar.tokyo"
           >
-            <BotMessageSquare className="h=6 w-6" />
-            <span className="text-2xl py-2 ">
+            <BotMessageSquare className="h-16 w-16 mr-4 ml-4 my-2" />
+            <span className="text-2xl py-2 mr-6">
               Practicing spoken Japanese by chatting with AI.
             </span>
           </Link>
@@ -26,7 +26,7 @@ const FeaturedPosts = ({ blogs }) => {
           </h2>
         </div>
 
-        <div className="sm:w-1/2 w-full h-full">
+        <div className="sm:w-1/2 w-auto h-full">
           <MyadUnit />
         </div>
       </div>

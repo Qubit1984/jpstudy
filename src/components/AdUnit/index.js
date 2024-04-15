@@ -83,7 +83,21 @@ class InFeedsmonly extends React.Component {
 
   render() {
     const { adCode } = this.props;
+    if (typeof window === "undefined" || window.innerWidth < 640) {
+      return <></>;
+    }
 
+    return (
+      <div
+        className="container mx-auto my-auto w-full h-full text-center"
+        aria-hidden={true}
+      >
+        {adCode}
+      </div>
+    );
+  }
+}
+/* 
     return (
       typeof window !== "undefined" &&
       window.innerWidth >= 640 && (
@@ -93,10 +107,10 @@ class InFeedsmonly extends React.Component {
         >
           {adCode}
         </div>
-      )
+      ) 
     );
   }
-}
+}*/
 const adCode0 = (
   <ins
     className="adsbygoogle"
