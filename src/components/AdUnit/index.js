@@ -33,7 +33,13 @@ class InFeed extends React.Component {
 
 class InFeedlgonly extends React.Component {
   renderAds() {
-    (window.adsbygoogle = window.adsbygoogle || []).push({});
+    if (shoudredender()) {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    }
+  }
+  shoudredender() {
+    const mediaQuery = window.matchMedia("(min-width: 1081px)");
+    return mediaQuery.matches;
   }
   componentDidMount() {
     this.renderAds();
@@ -47,20 +53,16 @@ class InFeedlgonly extends React.Component {
 
   render() {
     const { adCode } = this.props;
-    if (typeof window !== "undefined") {
-      // Use matchMedia to check if the screen width is greater than or equal to 1081px
-      const mediaQuery = window.matchMedia("(min-width: 1081px)");
 
-      if (mediaQuery.matches) {
-        return (
-          <div
-            className="container mx-auto my-auto w-full h-full text-center"
-            aria-hidden={true}
-          >
-            {adCode}
-          </div>
-        );
-      }
+    if (shoulfredender()) {
+      return (
+        <div
+          className="container mx-auto my-auto w-full h-full text-center"
+          aria-hidden={true}
+        >
+          {adCode}
+        </div>
+      );
     }
 
     return null;
