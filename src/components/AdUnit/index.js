@@ -178,6 +178,21 @@ const adcol = (
     data-full-width-responsive="true"
   ></ins>
 );
+const adfang = (
+  <ins
+    className="adsbygoogle"
+    style={{
+      display: "block",
+      width: "100%",
+      height: "auto",
+      textAlign: "center",
+    }}
+    data-ad-client="ca-pub-8741589583961176"
+    data-ad-slot="7269077708"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  />
+);
 const adsider = (
   <ins
     className="adsbygoogle adsider"
@@ -253,6 +268,11 @@ export const Myad1 = () => {
   const router = useRouter();
   return <InFeed adCode={ad1} router={router} />;
 };
+export const Myadfang = () => {
+  const router = useRouter();
+  return <InFeed adCode={adfang} router={router} />;
+};
+
 export const MyadUnitside = () => {
   const router = useRouter();
   return <InFeed adCode={adsider} router={router} />;

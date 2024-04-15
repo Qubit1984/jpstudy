@@ -1,5 +1,5 @@
 import {
-  MyadUnit,
+  Myadfang,
   MyadUnit2,
   Myadsider3,
   Myadsider2,
@@ -232,7 +232,7 @@ export default function BlogPage({ params }) {
               </ul>
             </details>
             <div className="mt-4 col-span-12 lg:col-span-3 lg:col-start-1 h-auto">
-              <MyadUnit />
+              <Myadfang />
             </div>
             <div className="mt-4 h-full w-full">
               <Myadsider2 className="h-full" />
