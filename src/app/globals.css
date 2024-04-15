@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (max-width: 1280px) {
-  .adslot_col {
+@media (max-width: 1024px) {
+  .adsider {
     display: none;
   }
 }

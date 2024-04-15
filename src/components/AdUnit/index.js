@@ -190,9 +190,9 @@ const adsider = (
     data-full-width-responsive="true"
   ></ins>
 );
-const adsuoyin = (
+const adsider2 = (
   <ins
-    class="adsbygoogle adsuoyin"
+    class="adsbygoogle adsider2"
     style={{
       display: "block",
       width: "100%",
@@ -218,10 +218,7 @@ export const MyadUnit2 = () => {
   const router = useRouter();
   return <InFeed adCode={adCode2} router={router} />;
 };
-export const Myadsuoyin = () => {
-  const router = useRouter();
-  return <InFeed adCode={adsuoyin} router={router} />;
-};
+
 export const Myadstream = () => {
   const router = useRouter();
   return <InFeed adCode={adstream} router={router} />;
@@ -246,7 +243,10 @@ export const MyadUnitside = () => {
   const router = useRouter();
   return <InFeed adCode={adsider} router={router} />;
 };
-
+export const Myadsider2 = () => {
+  const router = useRouter();
+  return <InFeed adCode={adsider2} router={router} />;
+};
 export const MyadUnitcol = () => {
   const router = useRouter();
   //return <InFeedAdBlack router={router} />;

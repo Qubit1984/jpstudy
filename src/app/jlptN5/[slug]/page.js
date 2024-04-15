@@ -2,6 +2,7 @@ import {
   MyadUnit,
   MyadUnit2,
   MyadUnitcol,
+  Myadsider2,
   MyadUnitside,
 } from "@/src/components/AdUnit";
 import Isxlad from "@/src/components/AdUnit/isxl";
@@ -235,7 +236,7 @@ export default function BlogPage({ params }) {
               <MyadUnit />
             </div>
             <div className="mt-4 h-full xl:col-span-3 xl:col-start-1  xl:block hidden">
-              <MyadUnitcol className="h-full" />
+              <Myadsider2 className="h-full" />
             </div>
           </div>
           <RenderMdx blog={blog} />
