@@ -52,12 +52,15 @@ class InFeedlgonly extends React.Component {
     const { adCode } = this.props;
 
     return (
-      <div
-        className="container mx-auto my-auto w-full h-full text-center"
-        aria-hidden={true}
-      >
-        {adCode}
-      </div>
+      typeof window !== "undefined" &&
+      window.innerWidth >= 1081 && (
+        <div
+          className="container mx-auto my-auto w-full h-full text-center"
+          aria-hidden={true}
+        >
+          {adCode}
+        </div>
+      )
     );
   }
 }
