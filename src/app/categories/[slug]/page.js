@@ -9,7 +9,7 @@ import BlogLayoutThree from "@/src/components/Blog/BlogLayoutThree";
 import Categories from "@/src/components/Blog/Categories";
 import GithubSlugger, { slug } from "github-slugger";
 import { sortBlogsByid } from "@/src/utils";
-import { MyadUnit } from "@/src/components/AdUnit";
+import { MyadUnit, MyadUnit2, MyadUnit1 } from "@/src/components/AdUnit";
 
 const slugger = new GithubSlugger();
 const allPosts = [
@@ -95,10 +95,10 @@ const CategoryPage = ({ params }) => {
           </article>
         ))}
         <div className="lg:col-span-2 col-span-1 ">
-          <MyadUnit />
+          <MyadUnit1 />
         </div>
         <div className="lg:col-span-2 col-span-1">
-          <MyadUnit />
+          <MyadUnit2 />
         </div>
       </div>
     </article>

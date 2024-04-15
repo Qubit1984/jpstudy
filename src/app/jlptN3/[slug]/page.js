@@ -7,7 +7,12 @@ import { slug } from "github-slugger";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { MyadUnit } from "@/src/components/AdUnit";
+import {
+  MyadUnit,
+  MyadUnit2,
+  MyadUnitcol,
+  MyadUnitside,
+} from "@/src/components/AdUnit";
 export async function generateStaticParams() {
   return allJlptN3s.map((blog) => {
     const [, slugParts] = blog._raw.flattenedPath.split("/");
@@ -179,10 +184,17 @@ export default function BlogPage({ params }) {
             <div className="mt-4 col-span-12 xl:col-span-3 xl:col-start-1 ">
               <MyadUnit />
             </div>
+            <div className="mt-4 h-full xl:col-span-3 xl:col-start-1  xl:flex hidden">
+              <MyadUnitcol className="h-full" />
+            </div>
           </div>
           <RenderMdx blog={blog} />
-          <div className="col-span-12 xl:col-start-4  xl:col-span-7 ">
-            <MyadUnit />
+          <div className="xl:col-span-2  xl:col-start-11 hidden xl:block">
+            side
+            <MyadUnitside />
+          </div>
+          <div className="col-span-12 h-full xl:col-start-4  xl:col-span-7 ">
+            <MyadUnit2 className="h-full" />
           </div>
           <div className="flex col-span-12 h-18  mt-20 justify-around ">
             <Link

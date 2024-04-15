@@ -1,4 +1,9 @@
-import { MyadUnit, MyadUnitcol, MyadUnitside } from "@/src/components/AdUnit";
+import {
+  MyadUnit,
+  MyadUnit2,
+  MyadUnitcol,
+  MyadUnitside,
+} from "@/src/components/AdUnit";
 import BlogDetails from "@/src/components/Blog/BlogDetails";
 import RenderMdx from "@/src/components/Blog/RenderMdx";
 import Tag from "@/src/components/Elements/Tag";
@@ -238,7 +243,7 @@ export default function BlogPage({ params }) {
             <MyadUnitside />
           </div>
           <div className="col-span-12 h-full xl:col-start-4  xl:col-span-7 ">
-            <MyadUnit className="h-full" />
+            <MyadUnit2 className="h-full" />
           </div>
           <div className="flex  col-span-12 h-18  mt-20 justify-around ">
             <Link

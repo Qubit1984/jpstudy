@@ -6,7 +6,12 @@ import { allHomes } from "contentlayer/generated";
 import { slug } from "github-slugger";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { MyadUnit } from "@/src/components/AdUnit";
+import {
+  MyadUnit,
+  MyadUnit2,
+  MyadUnitcol,
+  MyadUnitside,
+} from "@/src/components/AdUnit";
 export async function generateStaticParams() {
   return allHomes.map((blog) => {
     const [, slugParts] = blog._raw.flattenedPath.split("/");
@@ -166,12 +171,33 @@ export default function BlogPage({ params }) {
             <div className="mt-4 col-span-12 xl:col-span-3 xl:col-start-1 ">
               <MyadUnit />
             </div>
+            <div className="mt-4 h-full xl:col-span-3 xl:col-start-1  xl:flex hidden">
+              <MyadUnitcol className="h-full" />
+            </div>
           </div>
           <RenderMdx blog={blog} />
-          <div className="col-span-12 xl:col-start-4  xl:col-span-7 ">
-            <MyadUnit />
+          <div className="xl:col-span-2  xl:col-start-11 hidden xl:block">
+            side
+            <MyadUnitside />
           </div>
-          <div className="flex col-span-12 h-18  mt-20 justify-around "></div>
+          <div className="col-span-12 h-full xl:col-start-4  xl:col-span-7 ">
+            <MyadUnit2 className="h-full" />
+          </div>
+          <div className="flex col-span-12 h-18  mt-20 justify-around ">
+            <Link
+              href={`/Home/${preSlug}`}
+              className="tflex items-center px-6 py-3 w-48  bg-blue-500 text-white rounded-md text-center hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            >
+              &larr; Previous Page
+            </Link>
+
+            <Link
+              href={`/Home/${nextSlug}`}
+              className="tflex items-center px-6 py-3 w-48  bg-blue-500 text-center text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            >
+              Next Page &rarr;
+            </Link>
+          </div>
         </div>
       </article>
     </>

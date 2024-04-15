@@ -334,7 +334,7 @@ const adCodetext = (
       textAlign: "center",
     }}
     data-ad-client="ca-pub-8741589583961176"
-    data-ad-slot="6776486639"
+    data-ad-slot="1636141910"
     data-ad-layout="in-article"
     data-ad-format="fluid"
     data-full-width-responsive="true"
@@ -345,7 +345,7 @@ const adstream0 = (
     className="adsbygoogle"
     style={{
       display: "block",
-      width: "100%",
+      width: "auto",
       height: "auto",
       textAlign: "center",
     }}
@@ -420,9 +420,9 @@ export const Myadrow = () => {
   const router = useRouter();
   return <InFeed adCode={adrow} router={router} />;
 };
-export const MyadUnittext = () => {
+export const Myadtext = () => {
   const router = useRouter();
-  return <InFeed adCode={adCode0} router={router} />;
+  return <InFeed adCode={adCodetext} router={router} />;
 };
 export const Myad1 = () => {
   const router = useRouter();
