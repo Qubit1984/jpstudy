@@ -33,9 +33,8 @@ class InFeed extends React.Component {
 
 class InFeedlgonly extends React.Component {
   renderAds() {
-    if (this.shouldRenderAds()) {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    }
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+    g;
   }
   componentDidMount() {
     this.renderAds();
