@@ -4,7 +4,9 @@ import { useRouter } from "next/navigation";
 
 class InFeed extends React.Component {
   renderAds() {
-    (window.adsbygoogle = window.adsbygoogle || []).push({});
+    if (window.innerWidth > 1081) {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    }
   }
 
   componentDidMount() {
