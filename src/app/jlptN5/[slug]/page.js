@@ -1,10 +1,9 @@
+import { Myadfang, MyadUnit2 } from "@/src/components/AdUnit";
 import {
-  Myadfang,
-  MyadUnit2,
-  Myadsider3,
-  Myadsider2,
-  MyadUnitside,
-} from "@/src/components/AdUnit";
+  MyadUnitsideClient,
+  Myadsider2Client,
+  Myadsider3Client,
+} from "@/src/components/AdUnit/Myside";
 import BlogDetails from "@/src/components/Blog/BlogDetails";
 import RenderMdx from "@/src/components/Blog/RenderMdx";
 import Tag from "@/src/components/Elements/Tag";
@@ -235,15 +234,15 @@ export default function BlogPage({ params }) {
               <Myadfang />
             </div>
             <div className="mt-4 h-auto w-full hidden lg:block">
-              <Myadsider2 className="h-full" />
+              <Myadsider2Client className="h-full" />
             </div>
             <div className="mt-4 h-auto w-full">
-              <Myadsider3 className="h-full" />
+              <Myadsider3Client className="h-full" />
             </div>
           </div>
           <RenderMdx blog={blog} />
           <div className="lg:col-span-2  lg:col-start-11 h-full  hidden lg:block">
-            <MyadUnitside />
+            <MyadUnitsideClient />
           </div>
           <div className="col-span-12 h-full lg:col-start-4  lg:col-span-7 ">
             <MyadUnit2 className="h-full" />
