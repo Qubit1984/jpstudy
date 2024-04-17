@@ -5,5 +5,5 @@ const Myad1 = dynamic(() => import("./index").then((mod) => mod.Myad1), {
 });
 
 export default function Myad1Client() {
-  return Myad1;
+  return <Myad1 />;
 }
