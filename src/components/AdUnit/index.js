@@ -149,7 +149,7 @@ const adCode2 = (
     style={{
       display: "block",
       width: "100%",
-      height: "160px",
+      height: "200px",
       textAlign: "center",
     }}
     data-ad-client="ca-pub-8741589583961176"
