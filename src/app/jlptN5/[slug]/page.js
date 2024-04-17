@@ -234,18 +234,18 @@ export default function BlogPage({ params }) {
               <Myadfang />
             </div>
             <div className="mt-4 h-auto w-full hidden lg:block">
-              <Myadsider2Client className="h-full" />
+              <Myadsider2Client />
             </div>
             <div className="mt-4 h-auto w-full">
-              <Myadsider3Client className="h-full" />
+              <Myadsider3Client />
             </div>
           </div>
           <RenderMdx blog={blog} />
           <div className="lg:col-span-2  lg:col-start-11 h-full  hidden lg:block">
             <MyadUnitsideClient />
           </div>
-          <div className="col-span-12 h-full lg:col-start-4  lg:col-span-7 ">
-            <MyadUnit2 className="h-full" />
+          <div className="col-span-12 h-auto lg:col-start-4  lg:col-span-7 ">
+            <MyadUnit2 />
           </div>
           <div className="flex  col-span-12 h-18  mt-20 justify-around ">
             <Link

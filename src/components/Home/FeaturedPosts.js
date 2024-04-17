@@ -5,6 +5,7 @@ import BlogLayoutTwo from "../Blog/BlogLayoutTwo";
 import { MyadUnit } from "@/src/components/AdUnit";
 import { BotMessageSquare } from "lucide-react";
 import Link from "next/link";
+
 const FeaturedPosts = ({ blogs }) => {
   const sortedBlogs = sortBlogsUpdate(blogs);
   return (

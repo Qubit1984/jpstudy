@@ -290,7 +290,7 @@ const adsider = (
 );
 const adsider2 = (
   <ins
-    class="adsbygoogle adsider"
+    className="adsbygoogle adsider"
     style={{
       width: "100%",
       height: "auto",
@@ -304,7 +304,7 @@ const adsider2 = (
 );
 const adsider3 = (
   <ins
-    class="adsbygoogle adsider"
+    className="adsbygoogle adsider"
     style={{
       width: "100%",
       height: "auto",

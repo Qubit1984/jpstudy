@@ -184,10 +184,10 @@ export default function BlogPage({ params }) {
               <Myadfang />
             </div>
             <div className="mt-4 h-full w-full hidden lg:block">
-              <Myadsider2Client className="h-full" />
+              <Myadsider2Client />
             </div>
             <div className="mt-4 h-full w-full hidden lg:block">
-              <Myadsider3Client className="h-full" />
+              <Myadsider3Client />
             </div>
           </div>
           <RenderMdx blog={blog} />
