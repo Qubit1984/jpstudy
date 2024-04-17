@@ -7,9 +7,18 @@ import Example from "../Example";
 import Myaudio from "../Audio";
 import Gojuon from "../Gojuon";
 import { Myadtext } from "../AdUnit";
+
+const Spanred = ({ children, className, ...props }) => {
+  return (
+    <span className={`${className} text-red-600`} {...props}>
+      {children}
+    </span>
+  );
+};
 const mdxComponents = {
   Image,
   Link,
+  Spanred,
   Gojuon,
   Myaudio,
   Example,

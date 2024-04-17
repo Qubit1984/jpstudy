@@ -6,8 +6,6 @@ import Footer from "../components/Footer";
 import siteMetadata from "../utils/siteMetaData";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
-import { GoogleAdSense } from "next-google-adsense";
-
 import BackToTop from "../components/Backtotop";
 const inter = Inter({
   subsets: ["latin"],

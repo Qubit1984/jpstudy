@@ -1,3 +1,5 @@
+const { BluetoothSearching } = require("lucide-react");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -10,6 +12,8 @@ module.exports = {
     extend: {
       colors: {
         dark: "#1b1b1b",
+        redd: "#ff0000",
+        Bluet: "#00ffff",
         light: "#fff",
         accent: "#7B00D3",
         accentDark: "#ffdb4d",
