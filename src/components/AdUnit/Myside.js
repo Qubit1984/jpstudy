@@ -8,8 +8,9 @@ const Myadsider2 = dynamic(
 );
 
 export function Myadsider2Client() {
-  return Myadsider2;
+  return <Myadsider2 />;
 }
+
 const Myadsider3 = dynamic(
   () => import("./index").then((mod) => mod.Myadsider2),
   {
@@ -18,7 +19,7 @@ const Myadsider3 = dynamic(
 );
 
 export function Myadsider3Client() {
-  return Myadsider3;
+  return <Myadsider3 />;
 }
 const MyadUnitside = dynamic(
   () => import("./index").then((mod) => mod.MyadUnitside),
@@ -28,5 +29,5 @@ const MyadUnitside = dynamic(
 );
 
 export function MyadUnitsideClient() {
-  return MyadUnitside;
+  return <MyadUnitside />;
 }

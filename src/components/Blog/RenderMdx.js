@@ -6,7 +6,7 @@ import Link from "next/link";
 import Example from "../Example";
 import Myaudio from "../Audio";
 import Gojuon from "../Gojuon";
-import { Myadtext } from "../AdUnit";
+import { MyadUnit1, Myadtext } from "../AdUnit";
 
 const Spanred = ({ children, className, ...props }) => {
   return (
@@ -23,6 +23,7 @@ const mdxComponents = {
   Myaudio,
   Example,
   Myadtext,
+  MyadUnit1,
 };
 
 /*    first-letter:text-3xl
