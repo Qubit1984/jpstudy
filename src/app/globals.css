@@ -85,7 +85,12 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
 h3 {
   @apply text-8xl;
 }
-
+h2 {
+  @apply text-5xl;
+}
+h1 {
+  @apply text-4xl;
+}
 .adsider {
   display: block;
   width: 100%;
@@ -105,4 +110,10 @@ h3 {
   .ad1 {
     display: none;
   }
+}
+/* .font-mr {
+  font-size: 3rem; 
+} */
+.prose-large {
+  font-size: 2rem; /* 你可以根据需要调整这个值 */
 }

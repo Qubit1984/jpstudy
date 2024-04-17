@@ -1,5 +1,3 @@
-const { BluetoothSearching } = require("lucide-react");
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -24,7 +22,9 @@ module.exports = {
         in: ["var(--font-in)"],
       },
       fontSize: {
-        "3xl": "1.875rem",
+        xl: "1.3rem",
+        "2xl": "1.6rem",
+        "3xl": "1.975rem",
         "4xl": "2.25rem",
         "5xl": "3rem",
         "6xl": "4rem",

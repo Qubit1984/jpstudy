@@ -97,7 +97,7 @@ const Header = () => {
           onMouseEnter={handleMouseEnter}
           onClick={handelClick}
         >
-          <button className="inline-flex items-center  py-2 border border-transparent text-base font-medium rounded-md text-gray-700 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-gray-500 ">
+          <button className="inline-flex items-center  py-2 border border-transparent  font-medium rounded-md text-gray-700 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-gray-500 ">
             Grammar
           </button>
           {isOpen && (
@@ -186,7 +186,7 @@ const Header = () => {
           className="relative inline-block text-left px-3"
           onMouseEnter={handleMouseEnter}
         >
-          <button className="inline-flex items-center  py-2 border border-transparent text-base font-medium rounded-md text-gray-700 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-gray-500 ">
+          <button className="inline-flex items-center  py-2 border border-transparent font-medium rounded-md text-gray-700 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-gray-500 ">
             Grammar
           </button>
           {isOpen && (
