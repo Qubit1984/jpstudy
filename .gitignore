@@ -39,7 +39,5 @@ next-env.d.ts
 /content/stores
 
 
-/public/robots.txt
-/public/sitemap.xml
-/public/sitemap-0.xml
+
 
