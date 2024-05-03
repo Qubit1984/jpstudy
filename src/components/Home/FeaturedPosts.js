@@ -13,9 +13,8 @@ const FeaturedPosts = ({ blogs }) => {
       <div className="w-full h-auto items-end flex-col-reverse flex sm:flex-row">
         <div className="sm:w-1/2 w-full flex flex-col items-start ">
           <Link
-            className="flex items-center justify-center mb-8 h-18 px-4 bg-accent dark:bg-accentDark text-white dark:text-dark  rounded-full duration-200 ease-in-out hover:scale-110  hover:underline 
-            "
-            href="https://chat.japanesegrammar.tokyo"
+            className="flex items-center justify-center mb-8 h-18 px-4 bg-accent dark:bg-accentDark text-white dark:text-dark  rounded-full duration-200 ease-in-out hover:scale-110  hover:underline"
+            href="https://ai.japanesegrammar.tokyo"
           >
             <BotMessageSquare className="h-16 w-16 mr-4 ml-4 my-2" />
             <span className="text-2xl py-2 mr-6">
