@@ -16,7 +16,7 @@ const Myaudio = ({ src }) => {
     <div>
       <audio ref={audioRef} src={src} preload="auto" />
       <button onClick={handlePlayPause}>
-        <AudioIcon className="h-6 w-6 fill-accent dark:fill-accentDark   hover:scale-125 transition-all ease duration-200" />
+        <AudioIcon className="h-6 w-6 fill-accent dark:fill-accentDark brightness-130  hover:scale-125 transition-all ease duration-200" />
       </button>
     </div>
   );
