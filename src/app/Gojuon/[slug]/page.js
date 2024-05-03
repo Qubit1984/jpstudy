@@ -199,19 +199,22 @@ export default function BlogPage({ params }) {
             <MyadUnit2 />
           </div>
           <div className="flex col-span-12 h-18  mt-20 justify-around ">
-            <Link
-              href={`/Gojuon/${preSlug}`}
-              className="tflex items-center px-6 py-3 w-48  bg-blue-500 text-white rounded-md text-center hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-            >
-              &larr; Previous Page
-            </Link>
-
-            <Link
-              href={`/Gojuon/${nextSlug}`}
-              className="tflex items-center px-6 py-3 w-48  bg-blue-500 text-center text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-            >
-              Next Page &rarr;
-            </Link>
+            {preSlug !== 0 && (
+              <Link
+                href={`/Gojuon/${preSlug}`}
+                className="tflex items-center px-6 py-3 w-48  bg-blue-500 text-white rounded-md text-center hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+              >
+                &larr; Previous Page
+              </Link>
+            )}
+            {nextSlug !== 6 && (
+              <Link
+                href={`/Gojuon/${nextSlug}`}
+                className="tflex items-center px-6 py-3 w-48  bg-blue-500 text-center text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+              >
+                Next Page &rarr;
+              </Link>
+            )}
           </div>
         </div>
       </article>
