@@ -22,10 +22,10 @@ const RecentPosts = ({ blogs }) => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-16 mt-16">
-        <div className="flex col-span-1 w-full h-auto">
+        {/*    <div className="flex col-span-1 w-full h-auto">
           <Myadstream0 />
-        </div>
-        {sortedBlogs.slice(0, 7).map((blog, index) => {
+        </div> */}
+        {sortedBlogs.slice(0, 8).map((blog, index) => {
           return (
             <article key={index} className="col-span-1 row-span-1 relative">
               <BlogLayoutThree blog={blog} />
