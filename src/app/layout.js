@@ -74,6 +74,11 @@ export default function RootLayout({ children }) {
           gtag('config', 'G-JWZ3H0GQQT');
         `}
       </Script>
+      <script
+        defer
+        src="https://web.731732.xyz/script.js"
+        data-website-id="53f3ffa5-8244-438e-a06d-ec4819f81d8c"
+      ></script>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-JWZ3H0GQQT"
         strategy="afterInteractive"
